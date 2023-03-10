@@ -1,0 +1,114 @@
+.journey {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.journeytxt {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+}
+
+.journeyHeader {
+  left: 330px;
+  position: absolute;
+}
+
+.journeyHeader h2 {
+  padding-top: 20px;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "SF-Regular", sans-serif;
+  position: relative;
+}
+
+.journeyHeader h2 span {
+  font-family: "SF-Bold", sans-serif;
+  background: linear-gradient(to right, #c35427 0%, #ea9c2b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  font-size: 60px;
+}
+
+.journeyHeader h2::before {
+  content: url(https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1d8b3f42-5280-4019-b89e-4564597d3200/public);
+  position: absolute;
+  left: -320px;
+  top: 5px;
+}
+
+.journeycol {
+  padding: 0;
+  margin-top: 0px;
+}
+
+/* ==========================Media-Queries========================== */
+
+@media screen and (max-width: 1199px) {
+  .journeyHeader {
+    left: 250px;
+  }
+
+  .journeycol {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .journeyHeader {
+    left: 170px;
+  }
+
+  .journeyHeader h2::before {
+    display: none;
+  }
+
+  .journey {
+    height: auto;
+  }
+
+  .journeyImg {
+    margin: 30px 0;
+  }
+
+  .journeytxt {
+    position: absolute;
+    right: -100px;
+    bottom: 0px;
+  }
+
+  .journeyHeader h2,
+  .journeyHeader h2 span {
+    font-size: 45px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .journeyHeader h2,
+  .journeyHeader h2 span {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .journeyImg {
+    margin: 0;
+  }
+
+  .journeytxt {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .journeyHeader {
+    position: relative;
+    left: 0px;
+  }
+
+  .journeycol {
+    margin-top: 0px;
+  }
+}
