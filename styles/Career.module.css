@@ -1,14 +1,6 @@
-.career{
-  height: 100vh;
-}
-
 .careerRow {
   align-items: center;
   justify-content: space-between;
-}
-
-.careerRow img{
-  height: 100vh;
 }
 
 .careerContent {
@@ -55,7 +47,6 @@
 
 @media screen and (max-width: 991px) {
   .career {
-    height: auto;
     padding: 0 0 20px 0;
   }
 

@@ -17,7 +17,7 @@ const Journey = () => {
                             </div>
                         </Col>
                         <Col xl={12} className={styles.journeycol}>
-                            <Image className={`${styles.journeyImg} img-fluid mt-lg-5`}
+                            <Image className={`${styles.journeyImg} w-100 img-fluid mt-lg-5`}
                                 src={journeyImg}
                                 alt="journeyImg"
                             />

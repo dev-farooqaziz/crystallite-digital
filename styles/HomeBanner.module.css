@@ -78,6 +78,7 @@
 
 .social {
   position: absolute;
+  top: 85px;
   width: 225px;
   z-index: 100;
   display: flex;
@@ -171,8 +172,23 @@
   margin: 0 0 16px 0;
 }
 
-
 /* ==========================Media-Queries========================== */
+
+@media screen and (min-width: 1805px) {
+  .bannerBody .social {
+    top: 135px !important;
+  }
+}
+@media screen and (min-width: 1504px) {
+  .bannerBody .social {
+    top: 85px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .social {
+    top: 55px;
+  }
+}
 
 @media screen and (max-width: 991px) {
   .shadedText {
