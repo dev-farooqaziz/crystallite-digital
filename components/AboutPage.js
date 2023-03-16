@@ -7,7 +7,7 @@ import abtBanner from '../public/images/about-banner.png'
 const AboutPage = () => {
     return (
         <>
-            <section className={styles.banner}>
+            <section className={`${styles.banner} scroll scroll-banner`} data-section-name="scroll-banner">
                 <Container>
                     <Row className={styles.aboutRow}>
                         <Col md={6}>
@@ -27,7 +27,7 @@ const AboutPage = () => {
                     </Row>
                 </Container>
             </section>
-            <section className={styles.aboutBody}>
+            <section className={`${styles.aboutBody} scroll scroll-body`} data-section-name="scroll-body">
                 <Container>
                     <Row>
                         <Col xl={12}>

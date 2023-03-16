@@ -7,7 +7,7 @@ import cntctBanner from '../public/images/contact-banner.png'
 const ContactPage = () => {
     return (
         <>
-            <section className={styles.banner}>
+            <section className={`${styles.banner} scroll scroll-banner`} data-section-name="scroll-banner">
                 <Container>
                     <Row className={styles.contactRow}>
                         <Col md={6}>

@@ -25,7 +25,7 @@ const DedHostingServTab = () => {
 
     return (
         <>
-            <section className={`${styles.dedhostingService} scroll scroll-service`} data-section-name="scroll-service">
+            <section className={`${styles.dedhostingService} scroll scroll-servTab`} data-section-name="scroll-servTab">
                 <Container>
                     <Row className={styles.tabsRow}>
                         <Col md={6}>

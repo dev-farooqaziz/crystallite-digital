@@ -299,6 +299,49 @@ p {
   color: #fff;
 }
 
+/* ==========================Full-Page-Scroll========================== */
+/* 
+.fp-watermark {
+  display: none;
+}
+
+.fp-scroll-mac #fp-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+}
+
+.fp-scroll-mac #fp-nav ul li {
+}
+
+.fp-scroll-mac #fp-nav ul li a span {
+  border-radius: 0px;
+  z-index: 1;
+  height: 60px;
+  width: 4px;
+  border: 0;
+  background: #333;
+  transition: all 0.1s ease-in-out;
+  margin: 0;
+}
+
+.fp-scroll-mac #fp-nav ul li a.active span,
+.fp-scroll-mac #fp-nav ul li a.active:hover span,
+.fp-scroll-mac #fp-nav ul li a:hover span {
+  height: 60px;
+  width: 4px;
+  border-radius: 0px;
+  margin: 0;
+}
+
+.fp-scroll-mac #fp-nav ul li a.active span,
+.fp-scroll-mac #fp-nav ul li a:hover span {
+  background-color: #c35427;
+} */
+
 /* ==========================Media-Queries========================== */
 
 @media screen and (max-width: 1199px) {
@@ -312,6 +355,10 @@ p {
   .primary-btn {
     font-size: 16px;
   }
+/*   
+  .fp-section{
+    height: auto !important;
+  } */
 }
 
 @media screen and (max-width: 767px) {

@@ -22,7 +22,7 @@ const DigtalMarktngServics = () => {
 
     return (
         <>
-            <section className={`${styles.manageItTabs} scroll scroll-service`} data-section-name="scroll-service">
+            <section className={`${styles.manageItTabs} scroll scroll-servTab`} data-section-name="scroll-servTab">
                 <Container>
                     <Row className={styles.manageItTabsRow}>
                         <Col xl={6}>

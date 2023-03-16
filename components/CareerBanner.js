@@ -7,7 +7,7 @@ import careerBanner from '../public/images/career-banner.png'
 const CareerBanner = () => {
     return (
         <>
-            <section className={styles.banner}>
+            <section className={`${styles.banner} scroll scroll-banner`} data-section-name="scroll-banner">
                 <Container>
                     <Row className={styles.careerRow}>
                         <Col md={6}>

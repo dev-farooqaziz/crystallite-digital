@@ -7,7 +7,7 @@ import busIntBanner from '../public/images/business-banner.png'
 const BusinessBanner = () => {
     return (
         <>
-            <section className={styles.banner}>
+            <section className={`${styles.banner} scroll scroll-banner`} data-section-name="scroll-banner">
                 <Container>
                     <Row className={styles.busIntRow}>
                         <Col md={6}>

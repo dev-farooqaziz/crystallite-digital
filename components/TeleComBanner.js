@@ -7,7 +7,7 @@ import teleBanner from '../public/images/telecommunication.png'
 const TeleComBanner = () => {
     return (
         <>
-            <section className={styles.banner}>
+            <section className={`${styles.banner} scroll scroll-banner`} data-section-name="scroll-banner">
                 <Container>
                     <Row className={styles.teleRow}>
                         <Col md={6}>

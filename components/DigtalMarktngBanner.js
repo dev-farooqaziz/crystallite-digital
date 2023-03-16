@@ -7,7 +7,7 @@ import digiBanner from '../public/images/digital-marketing-banner.png'
 const DigtalMarktngBanner = () => {
     return (
         <>
-            <section className={styles.banner}>
+            <section className={`${styles.banner} scroll scroll-banner`} data-section-name="scroll-banner">
                 <Container>
                     <Row className={styles.digiRow}>
                         <Col md={6}>

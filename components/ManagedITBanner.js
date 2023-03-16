@@ -7,7 +7,7 @@ import ITBanner from '../public/images/it-banner.png'
 const ManagedITBanner = () => {
     return (
         <>
-            <section className={styles.banner}>
+            <section className={`${styles.banner} scroll scroll-banner`} data-section-name="scroll-banner">
                 <Container>
                     <Row className={styles.manageITRow}>
                         <Col md={6}>

@@ -7,7 +7,7 @@ import transBanner from '../public/images/transcription-banner.png'
 const TranscriptionBanner = () => {
     return (
         <>
-            <section className={styles.banner}>
+            <section className={`${styles.banner} scroll scroll-banner`} data-section-name="scroll-banner">
                 <Container>
                     <Row className={styles.transRow}>
                         <Col md={6}>

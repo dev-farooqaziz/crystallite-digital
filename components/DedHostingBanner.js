@@ -7,7 +7,7 @@ import hostingBanner from '../public/images/hosting-banner.png'
 const DedHostingBanner = () => {
     return (
         <>
-            <section className={styles.banner}>
+            <section className={`${styles.banner} scroll scroll-banner`} data-section-name="scroll-banner">
                 <Container>
                     <Row className={styles.hostingRow}>
                         <Col md={6}>
