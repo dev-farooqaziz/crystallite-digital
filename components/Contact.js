@@ -1,10 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios';
 import Link from 'next/link';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, FormControl } from 'react-bootstrap';
 import styles from '@/styles/Contact.module.css';
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
+
+    const [formvalue, setFormvalue] = useState({ name: '', email: '', phone: '', message: '' });
+
+    const handleInput = (e) => {
+        setFormvalue({ ...formvalue, [e.target.name]: e.target.value });
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const formData = { name: formvalue.name, email: formvalue.email, phone: formvalue.phone, message: formvalue.message };
+
+        const res = await axios.post("http://localhost/reactcrudphp/api/user.php", formData);
+
+    };
+
     return (
         <>
             <section className={`${styles.contact} scroll scroll-contact`} data-section-name="scroll-contact">
@@ -31,19 +48,47 @@ const Contact = () => {
                             </div>
                         </Col>
                         <Col lg={6}>
-                            <form className={styles.contactForm}>
+                            <form className={styles.contactForm} onSubmit={handleSubmit} method="POST">
                                 <Row>
                                     <Col xl={12} className='mt-3'>
-                                        <input type="text" name="name" placeholder="Name" required="" />
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            placeholder="Name"
+                                            required
+                                            value={formvalue.name}
+                                            onChange={handleInput}
+                                        />
                                     </Col>
                                     <Col xl={12} className='mt-3'>
-                                        <input type="email" name="email" placeholder="Email" required="" />
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            placeholder="Email"
+                                            required
+                                            value={formvalue.email}
+                                            onChange={handleInput}
+                                        />
                                     </Col>
                                     <Col xl={12} className='mt-3'>
-                                        <input type="text" maxlength="10" name="phone" placeholder="Phone" required="" />
+                                        <input
+                                            type="text"
+                                            name="phone"
+                                            placeholder="Phone"
+                                            maxLength="10"
+                                            required
+                                            value={formvalue.phone}
+                                            onChange={handleInput}
+                                        />
                                     </Col>
                                     <Col xl={12} className='mt-3'>
-                                        <textarea placeholder="Message"></textarea>
+                                        <textarea
+                                            name="message"
+                                            placeholder="Message"
+                                            required
+                                            value={formvalue.message}
+                                            onChange={handleInput}>
+                                        </textarea>
                                     </Col>
                                     <Col xl={12} className='mt-4'>
                                         <button type="submit" className='primary-btn'>Submit</button>

@@ -1,0 +1,10 @@
+/* 
+.fullpageNav{
+    background-color: red;
+}
+@media screen and (max-width:991px) {
+    .fullpage{
+        height: auto !important;
+    }
+
+} */
