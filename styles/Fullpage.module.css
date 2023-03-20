@@ -1,0 +1,51 @@
+/* .scroll-control {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  width: 20px;
+  height: auto;
+  z-index: 9;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-control span {
+  width: 4px;
+  height: 60px;
+  display: block;
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+.scroll-control span.active {
+  background-color: #c35427;
+}
+
+.pagination {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  width: 20px;
+  height: auto;
+  z-index: 9;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination a {
+  width: 4px;
+  height: 60px;
+  display: block;
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+.pagination a.active {
+  background-color: #c35427;
+} */

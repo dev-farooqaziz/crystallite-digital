@@ -79,6 +79,7 @@
 .social {
   position: absolute;
   top: 85px;
+  left: 10px;
   width: 225px;
   z-index: 100;
   display: flex;
@@ -176,14 +177,53 @@
 
 @media screen and (min-width: 1805px) {
   .bannerBody .social {
-    top: 135px !important;
+    top: 235px !important;
+  }
+  .shadedText {
+    top: 35%;
+  }
+  .bannerText {
+    top: 25%;
+  }
+  .bannerText h1 {
+    font-size: 80px;
+  }
+  .bannerText h1 span {
+    font-size: 120px;
+  }
+  .bannerText p {
+    font-size: 36px;
+  }
+  .bannerText button {
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 1504px) {
   .bannerBody .social {
-    top: 85px;
+    top: 132px;
+  }
+  .shadedText {
+    top: 30%;
+  }
+  .bannerText h1 {
+    font-size: 70px;
+  }
+  .bannerText h1 span {
+    font-size: 100px;
+  }
+  .bannerText p {
+    font-size: 30px;
+  }
+  .bannerText button {
+    font-size: 28px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .bannerText {
+    left: 25%;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .social {
     top: 55px;
@@ -230,7 +270,7 @@
   }
 
   .bannerText {
-    top: 26%;
+    top: 30%;
     left: 25%;
   }
 
@@ -256,24 +296,11 @@
   .bannerText {
     position: relative;
     left: 0;
-    top: 50%;
+    top: 120%;
   }
 
   .bannerText h1,
   .bannerText h1 span {
     font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 577px) {
-  .bannerText h1,
-  .bannerText h1 span {
-    font-size: 30px;
-  }
-
-  .bannerText {
-    position: relative;
-    left: 0;
-    top: 50%;
   }
 }

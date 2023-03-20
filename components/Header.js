@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
-import styles from '../styles/Header.module.css'
 import Navbar from 'react-bootstrap/Navbar';
 import { FaPhoneAlt, FaEnvelope, FaBuilding, FaBars, FaRegWindowClose } from "react-icons/fa";
+import styles from '../styles/Header.module.css'
 import logo from '../public/images/logo.svg'
 
 const Header = () => {
@@ -79,7 +79,7 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact/"onClick={handleMenu}>
+                                    <Link href="/contact/" onClick={handleMenu}>
                                         Contact Us
                                     </Link>
                                 </li>

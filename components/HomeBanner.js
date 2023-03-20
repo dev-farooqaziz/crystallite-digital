@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
-import styles from '@/styles/HomeBanner.module.css';
 import { FaFacebookF, FaTwitter, FaGoogle } from "react-icons/fa";
+import styles from '@/styles/HomeBanner.module.css';
 import search from '../public/images/search-icon.png'
 
 const HomeBanner = () => {
