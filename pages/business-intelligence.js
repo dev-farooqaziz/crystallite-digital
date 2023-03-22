@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import BusinessBanner from '@/components/BusinessBanner';
-import BusinessServics from '@/components/BusinessServics';
+// import BusinessBanner from '@/components/BusinessBanner';
+// import BusinessServics from '@/components/BusinessServics';
+import FullPage from '../fullpagecomp/BusinessFullPage';
 
 
 export default function Home() {
@@ -15,8 +16,9 @@ export default function Home() {
                 <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
                 <meta name="Resource-type" content="Document" />
             </Head>
-            <BusinessBanner />
-            <BusinessServics />
+            {/* <BusinessBanner />
+            <BusinessServics /> */}
+            <FullPage />
         </>
     )
 }

@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import TranscriptionBanner from '@/components/TranscriptionBanner';
-import TranscriptionServics from '@/components/TranscriptionServics';
-
+// import TranscriptionBanner from '@/components/TranscriptionBanner';
+// import TranscriptionServics from '@/components/TranscriptionServics';
+import FullPage from '../fullpagecomp/TranscriptionFullPage';
 
 export default function Home() {
     return (
@@ -15,8 +15,9 @@ export default function Home() {
                 <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
                 <meta name="Resource-type" content="Document" />
             </Head>
-            <TranscriptionBanner />
-            <TranscriptionServics />
+            {/* <TranscriptionBanner />
+            <TranscriptionServics /> */}
+            <FullPage />
         </>
     )
 }

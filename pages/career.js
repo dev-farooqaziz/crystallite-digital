@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import CareerBanner from '@/components/CareerBanner';
-import CareerServics from '@/components/CareerServics';
+// import CareerBanner from '@/components/CareerBanner';
+// import CareerServics from '@/components/CareerServics';
+import FullPage from '../fullpagecomp/CareerFullPage';
 
 
 export default function Home() {
@@ -15,8 +16,9 @@ export default function Home() {
                 <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
                 <meta name="Resource-type" content="Document" />
             </Head>
-            <CareerBanner />
-            <CareerServics />
+            {/* <CareerBanner />
+            <CareerServics /> */}
+            <FullPage />
         </>
     )
 }

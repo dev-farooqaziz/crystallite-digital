@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import ContactPage from '@/components/ContactPage';
+// import ContactBanner from '@/components/ContactBanner';
+import FullPage from '../fullpagecomp/ContactFullPage';
 
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
                 <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
                 <meta name="Resource-type" content="Document" />
             </Head>
-            <ContactPage />
+            {/* <ContactBanner /> */}
+            <FullPage />
         </>
     )
 }

@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import TeleComBanner from '@/components/TeleComBanner';
-import TeleComServics from '@/components/TeleComServics';
+// import TeleComBanner from '@/components/TeleComBanner';
+// import TeleComServics from '@/components/TeleComServics';
+import FullPage from '../fullpagecomp/TelecomFullPage';
 
 
 export default function Home() {
@@ -15,8 +16,9 @@ export default function Home() {
                 <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
                 <meta name="Resource-type" content="Document" />
             </Head>
-            <TeleComBanner />
-            <TeleComServics />
+            {/* <TeleComBanner />
+            <TeleComServics /> */}
+            <FullPage />
         </>
     )
 }

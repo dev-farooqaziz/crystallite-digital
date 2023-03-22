@@ -152,9 +152,13 @@
 }
 
 @media screen and (max-width: 767px) {
-  .info,
   .menu {
     padding-left: 30px;
+  }
+
+  .info{
+    padding-left: 30px;
+    margin-top: 30px;
   }
 
   .menu li a {

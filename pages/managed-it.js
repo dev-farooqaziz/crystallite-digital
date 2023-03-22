@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import ManagedITBanner from '@/components/ManagedITBanner';
-import ManagedITServics from '@/components/ManagedITServics';
-import ManagedITServicsTab from '@/components/ManagedITServicsTab';
+// import ManagedITBanner from '@/components/ManagedITBanner';
+// import ManagedITServics from '@/components/ManagedITServics';
+// import ManagedITServicsTab from '@/components/ManagedITServicsTab';
+import FullPage from '../fullpagecomp/ManagedItFullPage';
 
 
 export default function Home() {
@@ -16,9 +17,10 @@ export default function Home() {
                 <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
                 <meta name="Resource-type" content="Document" />
             </Head>
-            <ManagedITBanner />
+            {/* <ManagedITBanner />
             <ManagedITServics />
-            <ManagedITServicsTab />
+            <ManagedITServicsTab /> */}
+            <FullPage />
         </>
     )
 }

@@ -379,7 +379,7 @@ const Services = () => {
                                 </MDBTabsPane>
                             </MDBTabsContent>
                         </Col>
-                        <Col xl={12}>
+                        <Col xl={12} className={styles.servTxt}>
                             <Image className={`${styles.servcTxt} img-fluid`}
                                 src={serviceTxt}
                                 alt="services"
