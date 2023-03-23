@@ -1,6 +1,4 @@
 import Head from 'next/head';
-// import AboutBanner from '@/components/AboutBanner';
-// import AboutBody from '@/components/AboutBody';
 import FullPage from '../fullpagecomp/AboutFullPage';
 
 
@@ -16,8 +14,6 @@ export default function Home() {
                 <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
                 <meta name="Resource-type" content="Document" />
             </Head>
-            {/* <AboutBanner /> */}
-            {/* <AboutBody /> */}
             <FullPage />
         </>
     )

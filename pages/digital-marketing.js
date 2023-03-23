@@ -1,6 +1,4 @@
 import Head from 'next/head';
-// import DigtalMarktngBanner from '@/components/DigtalMarktngBanner';
-// import DigtalMarktngServics from '@/components/DigtalMarktngServics';
 import FullPage from '../fullpagecomp/DigitalMarFullPage';
 
 
@@ -16,8 +14,6 @@ export default function Home() {
                 <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
                 <meta name="Resource-type" content="Document" />
             </Head>
-            {/* <DigtalMarktngBanner />
-            <DigtalMarktngServics /> */}
             <FullPage />
         </>
     )

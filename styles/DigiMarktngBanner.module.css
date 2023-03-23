@@ -54,13 +54,14 @@
   .digiBanner p {
     font-size: 16px;
   }
-}
 
-@media screen and (max-width: 767px) {
   .banner {
     height: auto;
     padding-top: 50px;
   }
+}
+
+@media screen and (max-width: 767px) {
 
   .digiBanner {
     margin-top: 50px;

@@ -27,7 +27,7 @@
 
 .logo {
   width: 60px;
-  margin-left: 150px;
+  margin-left: 50px;
   position: absolute;
   top: 10px;
   z-index: 3;
@@ -147,7 +147,6 @@
 
   .logo {
     width: 50px;
-    margin-left: 110px;
   }
 }
 
@@ -170,7 +169,4 @@
     margin-bottom: 10px;
   }
 
-  .logo {
-    margin-left: 20px;
-  }
 }

@@ -252,15 +252,14 @@ p {
 .fp-watermark{
   display: none;
 }
-
- .fp-section{
-    height: auto !important;
-  }
   
-
 @media screen and (max-width: 991px) {
   #fp-nav{
     display: none;
+  }
+
+  .fp-section{
+    height: auto !important;
   }
   
 }
