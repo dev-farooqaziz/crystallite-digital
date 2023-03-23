@@ -202,8 +202,13 @@ p {
   filter: brightness(0) invert(1);
 }
 
-/* ========================== */
+/* =============Slick============= */
 
+.slick-slider.iconSlider {
+  display: none;
+}
+
+/* =============FullPageScroll============= */
 
 .fp-right ul {
   height: 100vh;
@@ -224,7 +229,7 @@ p {
 }
 
 #fp-nav ul li a,
-.fp-slidesNav ul li a{
+.fp-slidesNav ul li a {
   height: 60px;
   width: 4px;
 }
@@ -240,7 +245,7 @@ p {
 }
 
 #fp-nav ul li a.active span,
-#fp-nav ul li:hover a.active span{
+#fp-nav ul li:hover a.active span {
   height: 60px;
   width: 4px;
   margin: 0px;
@@ -249,22 +254,11 @@ p {
   background-color: #c35427;
 }
 
-.fp-watermark{
+.fp-watermark {
   display: none;
 }
-  
-@media screen and (max-width: 991px) {
-  #fp-nav{
-    display: none;
-  }
 
-  .fp-section{
-    height: auto !important;
-  }
-  
-}
-
-/* ========================== */
+/* =============Tabs============= */
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:hover {
@@ -299,6 +293,31 @@ p {
   .banner-primary-btn,
   .primary-btn {
     font-size: 16px;
+  }
+
+  .iconSlideNt{
+    display: none;
+  }
+
+  .slick-slider.iconSlider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+  }
+
+  .iconSlider .slick-slide img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #fp-nav {
+    display: none;
+  }
+
+  .fp-section {
+    height: auto !important;
   }
 }
 

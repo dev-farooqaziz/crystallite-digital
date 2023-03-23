@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import styles from '@/styles/MngdITServics.module.css';
 import icon1 from '../public/images/app-support.png'
 import icon2 from '../public/images/help-desk.png'
@@ -14,6 +17,27 @@ import icon9 from '../public/images/network.png'
 
 
 const ManagedITServics = () => {
+
+    const settings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            }
+        ]
+    };
 
     return (
         <>
@@ -38,7 +62,7 @@ const ManagedITServics = () => {
                                 <Row className={styles.iconMainRow}>
                                     <Col xl={12}>
                                         <Row className={styles.iconRow}>
-                                            <Col xl={2}>
+                                            <Col xl={2} className='iconSlideNt'>
                                                 <div>
                                                     <Image
                                                         src={icon1}
@@ -47,7 +71,7 @@ const ManagedITServics = () => {
                                                     <p>Application Support</p>
                                                 </div>
                                             </Col>
-                                            <Col xl={2}>
+                                            <Col xl={2} className='iconSlideNt'>
                                                 <div>
                                                     <Image
                                                         src={icon2}
@@ -56,7 +80,7 @@ const ManagedITServics = () => {
                                                     <p>Help Desk</p>
                                                 </div>
                                             </Col>
-                                            <Col xl={2}>
+                                            <Col xl={2} className='iconSlideNt'>
                                                 <div>
                                                     <Image
                                                         src={icon3}
@@ -65,7 +89,7 @@ const ManagedITServics = () => {
                                                     <p>Software and Platform Services</p>
                                                 </div>
                                             </Col>
-                                            <Col xl={2}>
+                                            <Col xl={2} className='iconSlideNt'>
                                                 <div>
                                                     <Image
                                                         src={icon4}
@@ -74,7 +98,7 @@ const ManagedITServics = () => {
                                                     <p>Back End Processing</p>
                                                 </div>
                                             </Col>
-                                            <Col xl={2}>
+                                            <Col xl={2} className='iconSlideNt'>
                                                 <div>
                                                     <Image
                                                         src={icon5}
@@ -83,11 +107,58 @@ const ManagedITServics = () => {
                                                     <p>Desktop Support</p>
                                                 </div>
                                             </Col>
+                                            <Slider {...settings} className='iconSlider'>
+                                                <Col xl={2}>
+                                                    <div>
+                                                        <Image
+                                                            src={icon1}
+                                                            alt="Application_Support"
+                                                        />
+                                                        <p>Application Support</p>
+                                                    </div>
+                                                </Col>
+                                                <Col xl={2}>
+                                                    <div>
+                                                        <Image
+                                                            src={icon2}
+                                                            alt="Help_Desk"
+                                                        />
+                                                        <p>Help Desk</p>
+                                                    </div>
+                                                </Col>
+                                                <Col xl={2}>
+                                                    <div>
+                                                        <Image
+                                                            src={icon3}
+                                                            alt="Software_Platform"
+                                                        />
+                                                        <p>Software and Platform Services</p>
+                                                    </div>
+                                                </Col>
+                                                <Col xl={2}>
+                                                    <div>
+                                                        <Image
+                                                            src={icon4}
+                                                            alt="Back_End_Processing"
+                                                        />
+                                                        <p>Back End Processing</p>
+                                                    </div>
+                                                </Col>
+                                                <Col xl={2}>
+                                                    <div>
+                                                        <Image
+                                                            src={icon5}
+                                                            alt="Desktop_Support"
+                                                        />
+                                                        <p>Desktop Support</p>
+                                                    </div>
+                                                </Col>
+                                            </Slider>
                                         </Row>
                                     </Col>
                                     <Col xl={12}>
                                         <Row className={styles.iconRow}>
-                                            <Col xl={2}>
+                                            <Col xl={2} className='iconSlideNt'>
                                                 <div>
                                                     <Image
                                                         src={icon6}
@@ -96,7 +167,7 @@ const ManagedITServics = () => {
                                                     <p>Server Support</p>
                                                 </div>
                                             </Col>
-                                            <Col xl={2}>
+                                            <Col xl={2} className='iconSlideNt'>
                                                 <div>
                                                     <Image
                                                         src={icon7}
@@ -105,7 +176,7 @@ const ManagedITServics = () => {
                                                     <p>Contact Center</p>
                                                 </div>
                                             </Col>
-                                            <Col xl={2}>
+                                            <Col xl={2} className='iconSlideNt'>
                                                 <div>
                                                     <Image
                                                         src={icon8}
@@ -114,7 +185,7 @@ const ManagedITServics = () => {
                                                     <p>DR / Data Center</p>
                                                 </div>
                                             </Col>
-                                            <Col xl={2}>
+                                            <Col xl={2} className='iconSlideNt'>
                                                 <div>
                                                     <Image
                                                         src={icon9}
@@ -123,6 +194,44 @@ const ManagedITServics = () => {
                                                     <p>Network Deployment & Management</p>
                                                 </div>
                                             </Col>
+                                            <Slider {...settings} className='iconSlider'>
+                                                <Col xl={2}>
+                                                    <div>
+                                                        <Image
+                                                            src={icon6}
+                                                            alt="Server_Support"
+                                                        />
+                                                        <p>Server Support</p>
+                                                    </div>
+                                                </Col>
+                                                <Col xl={2}>
+                                                    <div>
+                                                        <Image
+                                                            src={icon7}
+                                                            alt="Contact_Center"
+                                                        />
+                                                        <p>Contact Center</p>
+                                                    </div>
+                                                </Col>
+                                                <Col xl={2}>
+                                                    <div>
+                                                        <Image
+                                                            src={icon8}
+                                                            alt="Data_Center"
+                                                        />
+                                                        <p>DR / Data Center</p>
+                                                    </div>
+                                                </Col>
+                                                <Col xl={2}>
+                                                    <div>
+                                                        <Image
+                                                            src={icon9}
+                                                            alt="Network_Deployment"
+                                                        />
+                                                        <p>Network Deployment & Management</p>
+                                                    </div>
+                                                </Col>
+                                            </Slider>
                                         </Row>
                                     </Col>
                                 </Row>
