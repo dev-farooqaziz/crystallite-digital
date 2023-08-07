@@ -2,8 +2,6 @@
   height: 100vh;
   width: 100%;
   z-index: 9999;
-  top: 0;
-  left: 0;
   background-image: -webkit-linear-gradient(
     45deg,
     #c35427 0%,
@@ -13,6 +11,7 @@
   transition: 0.5s;
   position: fixed;
   left: -100%;
+  top: 0;
   transition: all 0.7s ease-in-out;
 }
 
@@ -155,7 +154,7 @@
     padding-left: 30px;
   }
 
-  .info{
+  .info {
     padding-left: 30px;
     margin-top: 30px;
   }
@@ -172,5 +171,4 @@
   .logo {
     margin-left: 25px;
   }
-
 }
