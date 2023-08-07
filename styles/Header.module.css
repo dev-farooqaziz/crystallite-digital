@@ -58,11 +58,12 @@
   padding: 10px;
 }
 
-.subMenu h5 {
+.info h5 {
   color: #fff;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
   font-family: "Helvetica-Medium", sans-serif;
+  margin-bottom: 25px;
 }
 
 .subMenu li a {
@@ -73,11 +74,11 @@
   letter-spacing: 1px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .subMenu li {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .subMenu li:last-child {
@@ -116,6 +117,37 @@
   cursor: pointer;
   z-index: 1;
   color: #fff;
+}
+
+.infoLinks svg,
+.address svg {
+  font-size: 20px;
+}
+
+.address svg {
+  width: 50px;
+  margin-top: 5px;
+}
+
+.subMenu .address a {
+  align-items: flex-start;
+}
+
+.sociLinks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.sociLinks svg {
+  font-size: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.sociLinks a:hover svg {
+  filter: invert(1);
 }
 
 /* ==========================Media-Queries========================== */

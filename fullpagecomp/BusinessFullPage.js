@@ -1,5 +1,6 @@
 import ReactFullpage from '@fullpage/react-fullpage';
 import BusinessBanner from '@/components/BusinessBanner';
+import BusinessAbt from '@/components/BusinessAbt';
 import BusinessServics from '@/components/BusinessServics';
 import Contact from '@/components/Contact'
 
@@ -13,6 +14,9 @@ const FullPage = () => {
                     <>
                         <div className="section">
                             <BusinessBanner />
+                        </div>
+                        <div className="section">
+                            <BusinessAbt />
                         </div>
                         <div className="section">
                             <BusinessServics />

@@ -15,7 +15,7 @@ const DigtalMarktngBanner = () => {
                                 <h1>Digital <br />
                                     <span>Marketing</span>
                                 </h1>
-                                <p>Innovation is just around the corner with us.</p>
+                                <p>Digital Marketing is a blend of three ingredients, Passion, Creativity, and Consistency.</p>
                                 <div className={styles.form}>
                                     <button className='primary-btn'>Join Us</button>
                                 </div>

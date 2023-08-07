@@ -3,7 +3,7 @@ import axios from 'axios';
 import Link from 'next/link';
 import { Container, Row, Col, FormControl } from 'react-bootstrap';
 import styles from '@/styles/Contact.module.css';
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaBuilding } from "react-icons/fa";
 
 const Contact = () => {
 
@@ -31,18 +31,28 @@ const Contact = () => {
                             <div className={styles.contactContent}>
                                 <h2>Let's Get <br /> <span>Started</span></h2>
                                 <p>Some of the greatest things in life start with a <br /> simple conversation. We welcome you to call, <br /> email, or simply use the magic form to the right.</p>
-                                <h5>Email</h5>
                                 <div className={styles.infoLinks}>
                                     <Link href="mailto:info@crystal-lite.net">
                                         <FaEnvelope className={styles.icon} />
                                         info@crystal-lite.net
                                     </Link>
                                 </div>
-                                <h5>Phone</h5>
                                 <div className={styles.infoLinks}>
-                                    <Link href="tel:1-888-900-8007">
+                                    <Link href="mailto:hr@crystal-lite.net">
+                                        <FaEnvelope className={styles.icon} />
+                                        hr@crystal-lite.net
+                                    </Link>
+                                </div>
+                                <div className={styles.infoLinks}>
+                                    <Link href="tel:021-111 22 55 77">
                                         <FaPhoneAlt className={styles.icon} />
-                                        1-888-900-8007
+                                        021-111 22 55 77
+                                    </Link>
+                                </div>
+                                <div className={`${styles.infoLinks} ${styles.address}`}>
+                                    <Link href="https://goo.gl/maps/Vd2oB7YVTJQNJpNM6" target={'_blank'}>
+                                        <FaBuilding className={`${styles.icon}`} />
+                                        1210,1212 , National IT Park, Main Shahrah-e-Faisal, 74200, Karachi-Pakistan.
                                     </Link>
                                 </div>
                             </div>

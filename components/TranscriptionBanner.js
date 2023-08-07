@@ -12,10 +12,10 @@ const TranscriptionBanner = () => {
                     <Row className={styles.transRow}>
                         <Col md={6}>
                             <div className={styles.transBanner}>
-                                <h1>Transcription <br />
-                                    <span>Service</span>
+                                <h1>
+                                    <span>Transcription</span> Services That Make a Difference
                                 </h1>
-                                <p>Innovation is just around the corner with us.</p>
+                                <p>At Transcriber Hub, our goal is to keep your satisfaction level to highest standards through our revolutionary 3 – Tier process. Transcriber Hub takes pride of providing world-class services with surprising turnaround time in a highly affordable price.</p>
                                 <div className={styles.form}>
                                     <button className='primary-btn'>Join Us</button>
                                 </div>

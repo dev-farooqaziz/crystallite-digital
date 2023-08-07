@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
-import { FaPhoneAlt, FaEnvelope, FaBuilding, FaBars, FaRegWindowClose } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaBuilding, FaBars, FaRegWindowClose, FaFacebookSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
 import styles from '../styles/Header.module.css'
 import logo from '../public/images/logo.svg'
 
@@ -39,36 +39,6 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/digital-marketing/" onClick={handleMenu}>
-                                        Digital Marketing
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/telecommunication/" onClick={handleMenu}>
-                                        Telecommunication
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/managed-it/" onClick={handleMenu}>
-                                        IT Services
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/dedicated-hosting/" onClick={handleMenu}>
-                                        Dedicated Hosting
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/transcription/" onClick={handleMenu}>
-                                        Transcription
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/business-intelligence/" onClick={handleMenu}>
-                                        Business Intelligence
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link href="/career/" onClick={handleMenu}>
                                         Career
                                     </Link>
@@ -86,12 +56,52 @@ const Header = () => {
                             </ul>
                         </Col>
                         <Col md={4}>
-                            <ul className={styles.menu}>
+                            <ul className={`${styles.menu} ps-0`}>
                                 <li>
-                                    <Link href="#" onClick={handleMenu}>
-                                        Content Writing
+                                    <Link href="/digital-marketing/" onClick={handleMenu}>
+                                        Digital Marketing
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link href="/social-media-marketing/" onClick={handleMenu}>
+                                        Social Media Marketing
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/seo/" onClick={handleMenu}>
+                                        Seo Services
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/content-writing-services/" onClick={handleMenu}>
+                                        Content Writing Services
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/managed-it/" onClick={handleMenu}>
+                                        Managed IT Services
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/dedicated-hosting/" onClick={handleMenu}>
+                                        Dedicated Hosting
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/transcription/" onClick={handleMenu}>
+                                        Transcription
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/business-intelligence/" onClick={handleMenu}>
+                                        Business Intelligence
+                                    </Link>
+                                </li>
+                                {/* <li>
+                                    <Link href="/telecommunication/" onClick={handleMenu}>
+                                        Telecommunication
+                                    </Link>
+                                </li> 
                                 <li>
                                     <Link href="#" onClick={handleMenu}>
                                         Blog Writing
@@ -126,14 +136,14 @@ const Header = () => {
                                     <Link href="#" onClick={handleMenu}>
                                         Copy Writing
                                     </Link>
-                                </li>
+                                </li> */}
                             </ul>
                         </Col>
                         <Col md={4}>
                             <div className={styles.info}>
+                                <h5>GET IN TOUCH</h5>
                                 <ul className={styles.subMenu}>
                                     <li>
-                                        <h5>Email</h5>
                                         <div className={styles.infoLinks}>
                                             <Link href="mailto:info@crystal-lite.net">
                                                 <FaEnvelope className={styles.icon} />
@@ -142,20 +152,39 @@ const Header = () => {
                                         </div>
                                     </li>
                                     <li>
-                                        <h5>Phone</h5>
                                         <div className={styles.infoLinks}>
-                                            <Link href="tel:1-888-900-8007">
-                                                <FaPhoneAlt className={styles.icon} />
-                                                1-888-900-8007
+                                            <Link href="mailto:hr@crystal-lite.net">
+                                                <FaEnvelope className={styles.icon} />
+                                                hr@crystal-lite.net
                                             </Link>
                                         </div>
                                     </li>
                                     <li>
-                                        <h5>Office</h5>
                                         <div className={styles.infoLinks}>
+                                            <Link href="tel:021-111 22 55 77">
+                                                <FaPhoneAlt className={styles.icon} />
+                                                021-111 22 55 77
+                                            </Link>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className={styles.address}>
                                             <Link href="https://goo.gl/maps/Vd2oB7YVTJQNJpNM6" target={'_blank'}>
-                                                <FaBuilding className={styles.icon} />
-                                                Karachi, Pakistan
+                                                <FaBuilding className={`${styles.icon}`} />
+                                                1210,1212 , National IT Park, Main Shahrah-e-Faisal, 74200, Karachi-Pakistan.
+                                            </Link>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className={styles.sociLinks}>
+                                            <Link href="#" target={'_blank'}>
+                                                <FaFacebookSquare className={`${styles.icon}`} />
+                                            </Link>
+                                            <Link href="#" target={'_blank'}>
+                                                <FaTwitterSquare className={`${styles.icon}`} />
+                                            </Link>
+                                            <Link href="#" target={'_blank'}>
+                                                <FaLinkedin className={`${styles.icon}`} />
                                             </Link>
                                         </div>
                                     </li>

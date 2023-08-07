@@ -38,8 +38,7 @@ const DedHostingServTab = () => {
                                         />
                                         <h3>24/7 System <br />Monitoring</h3>
                                         <p>
-                                            Want to rank on the first page of Google? Our team of SEO experts is
-                                            skilled to get the ball rolling on your ranking and get you to the top so you can reap the benefits of your investment. SEO has been the sole focus of many emerging brands, and this is what we’re here to do for you.
+                                            We have a highly responsive support team which is available 24/7 to monitor the system in order to keep you connected with your business and always ready to address your queries.
                                         </p>
                                     </div>
                                 </MDBTabsPane>
@@ -49,10 +48,9 @@ const DedHostingServTab = () => {
                                             src={icon5}
                                             alt="domian"
                                         />
-                                        <h3>Operating System</h3>
+                                        <h3>Security And <br /> Performance</h3>
                                         <p>
-                                            Want to rank on the first page of Google? Our team of SEO experts is
-                                            skilled to get the ball rolling on your ranking and get you to the top so you can reap the benefits of your investment. SEO has been the sole focus of many emerging brands, and this is what we’re here to do for you.
+                                            All solutions are protected by a shared N+1 Cisco ASA firewall to ensure our network and client solutions are secured. High levels of performance and redundancy are achieved by utilizing redundant pairs of servers and high availability techniques, such as mirroring and replication.
                                         </p>
                                     </div>
                                 </MDBTabsPane>
@@ -64,8 +62,7 @@ const DedHostingServTab = () => {
                                         />
                                         <h3>Unlimited Onsite & <br />Remote Support.</h3>
                                         <p>
-                                            Want to rank on the first page of Google? Our team of SEO experts is
-                                            skilled to get the ball rolling on your ranking and get you to the top so you can reap the benefits of your investment. SEO has been the sole focus of many emerging brands, and this is what we’re here to do for you.
+                                            Crystallite provides clients with an unlimited onsite and remote service accessibility from everywhere with different support packages.
                                         </p>
                                     </div>
                                 </MDBTabsPane>
@@ -91,7 +88,7 @@ const DedHostingServTab = () => {
                                                 src={icon2}
                                                 alt="Operating_System"
                                             />
-                                            <h5>Operating System</h5>
+                                            <h5>Security And Performance</h5>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>

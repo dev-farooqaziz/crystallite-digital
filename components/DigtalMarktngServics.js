@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane } from 'mdb-react-ui-kit';
+import Link from 'next/link';
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
+import { MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane } from 'mdb-react-ui-kit';
 import styles from '@/styles/DigiMarktngServics.module.css';
+//
 import icon1 from '../public/images/seo.png'
 import icon2 from '../public/images/smm.png'
-import icon3 from '../public/images/ppc.png'
+import icon3 from '../public/images/proofreading.png'
 import icon4 from '../public/images/seo-1.png'
 import icon5 from '../public/images/smm-1.png'
-import icon6 from '../public/images/ppc-1.png'
+import icon6 from '../public/images/proofreading-1.png'
 
 
 const DigtalMarktngServics = () => {
@@ -59,7 +61,7 @@ const DigtalMarktngServics = () => {
                                                 src={icon3}
                                                 alt="IT"
                                             />
-                                            <h5>Pay-Per Click Marketing</h5>
+                                            <h5>Content Writing Services</h5>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -75,9 +77,9 @@ const DigtalMarktngServics = () => {
                                         />
                                         <h3>Search Engine <br />Optimization</h3>
                                         <p>
-                                            Want to rank on the first page of Google? Our team of SEO experts is
-                                            skilled to get the ball rolling on your ranking and get you to the top so you can reap the benefits of your investment. SEO has been the sole focus of many emerging brands, and this is what we’re here to do for you.
+                                            Crystallite’s expertise lies in building, publishing, and marketing engaging content that will grow your client base, increase customer retention and achieve your ultimate goal of sales. We formulate strategies in such a way that they make your social presence consistent and interesting.
                                         </p>
+                                        <Link href="/seo">Read More</Link>
                                     </div>
                                 </MDBTabsPane>
                                 <MDBTabsPane show={basicActive === 'tab2'}>
@@ -88,9 +90,9 @@ const DigtalMarktngServics = () => {
                                         />
                                         <h3>Social Media <br />Marketing</h3>
                                         <p>
-                                            Want to rank on the first page of Google? Our team of SEO experts is
-                                            skilled to get the ball rolling on your ranking and get you to the top so you can reap the benefits of your investment. SEO has been the sole focus of many emerging brands, and this is what we’re here to do for you.
+                                            In today’s world, People don’t want to know what you are selling because a thousand others are doing that too. The audience wants much more than just products. They want Entertainment, Commitment, and Efforts. We know social media strategies should not just pitch your product because selling has become quite a negative word. So after deeply analyzing your business, our Social Media Management team comes up with Strategies and Engaging Content that develop a sense of honesty, care, and loyalty between you and your customers. Increasing ROI is not our plan rather, it is a part of the overall plan of building a relationship with your customers.
                                         </p>
+                                        <Link href="/social-media-marketing">Read More</Link>
                                     </div>
                                 </MDBTabsPane>
                                 <MDBTabsPane show={basicActive === 'tab3'}>
@@ -99,11 +101,11 @@ const DigtalMarktngServics = () => {
                                             src={icon6}
                                             alt="domian"
                                         />
-                                        <h3>Pay-Per Click <br />Marketing</h3>
+                                        <h3>Content Writing Services</h3>
                                         <p>
-                                            Want to rank on the first page of Google? Our team of SEO experts is
-                                            skilled to get the ball rolling on your ranking and get you to the top so you can reap the benefits of your investment. SEO has been the sole focus of many emerging brands, and this is what we’re here to do for you.
+                                            A simply written piece is far better than a complicated paragraph that only a few can understand. Crystallite has a team of well-versed and Creative Writers who can make your content look attractive to your audience. Whatever industry you work in, you need professional writers. Be it the Content on your Website, Blogs on Trending Topics, Descriptions for your products, or Content for Social Media Posts. Our writers can build everything from scratch using the relevant Keywords to rank your content higher in SEO results and drag quality traffic towards your website. Before writing anything, we deeply understand your Business, its Vision, Values and Goals, and Competitive Advantage. Blending all this information with the knowledge and skills of our writers we give your audience something worth reading.
                                         </p>
+                                        <Link href="/content-writing-services">Read More</Link>
                                     </div>
                                 </MDBTabsPane>
                             </MDBTabsContent>

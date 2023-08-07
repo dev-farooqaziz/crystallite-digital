@@ -51,7 +51,7 @@ const DigtalMarktngServics = () => {
                                     </MDBTabsLink>
                                 </MDBTabsItem>
                                 <MDBTabsItem>
-                                    <MDBTabsLink onClick={() => handleBasicClick('tab4')} active={basicActive === 'tab3'}>
+                                    <MDBTabsLink onClick={() => handleBasicClick('tab3')} active={basicActive === 'tab3'}>
                                         <div className={styles.tabsPan}>
                                             <Image className='img-fluid'
                                                 src={icon3}
@@ -80,7 +80,7 @@ const DigtalMarktngServics = () => {
                                     <div className={styles.tabPanContent}>
                                         <h3>Tailored to your <br />Business needs</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                            Crystallite is ready to tailor your business needs by adding the value to the rapid change and advancement in your business. We support our clients in developing a new solution based on their unique business requirements.
                                         </p>
                                     </div>
                                 </MDBTabsPane>
@@ -88,7 +88,7 @@ const DigtalMarktngServics = () => {
                                     <div className={styles.tabPanContent}>
                                         <h3>Operating System</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                            Both Linux and Windows operating systems are available with our dedicated hosting solutions. We also have optimized servers for e-commerce platforms such as Magneto.
                                         </p>
                                     </div>
                                 </MDBTabsPane>
@@ -96,7 +96,7 @@ const DigtalMarktngServics = () => {
                                     <div className={styles.tabPanContent}>
                                         <h3>Guaranteed SLA</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                            Assuring our clients with 100% protected service with SLA providing you the highest level of security standard, customer support, and care.
                                         </p>
                                     </div>
                                 </MDBTabsPane>
@@ -104,7 +104,7 @@ const DigtalMarktngServics = () => {
                                     <div className={styles.tabPanContent}>
                                         <h3>High Competent Staff</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                            Crystallite has trained and exceedingly competent staff that can serve you with the best of their capacity. Our employees face and meet the challenge to resolve your problems in no time.
                                         </p>
                                     </div>
                                 </MDBTabsPane>

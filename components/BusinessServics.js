@@ -2,13 +2,20 @@ import React, { useState } from 'react';
 import { MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane } from 'mdb-react-ui-kit';
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
-import styles from '@/styles/BusinessServics.module.css';
-import icon1 from '../public/images/seo.png'
-import icon2 from '../public/images/smm.png'
-import icon3 from '../public/images/ppc.png'
-import icon4 from '../public/images/seo-1.png'
-import icon5 from '../public/images/smm-1.png'
-import icon6 from '../public/images/ppc-1.png'
+import busStyles from '@/styles/BusinessServics.module.css';
+import styles from '@/styles/MngdITServicsTab.module.css';
+import icon1 from '../public/images/health.png'
+import icon2 from '../public/images/financial.png'
+import icon3 from '../public/images/retail.png'
+import icon4 from '../public/images/manufacturing.png'
+import icon5 from '../public/images/tech.png'
+import icon6 from '../public/images/sector.png'
+import icon7 from '../public/images/health-1.png'
+import icon8 from '../public/images/financial-1.png'
+import icon9 from '../public/images/retail-1.png'
+import icon10 from '../public/images/manufacturing-1.png'
+import icon11 from '../public/images/tech-1.png'
+import icon12 from '../public/images/sector-1.png'
 
 
 const BusinessServics = () => {
@@ -25,19 +32,19 @@ const BusinessServics = () => {
 
     return (
         <>
-            <section className={`${styles.busIntService} scroll scroll-service`} data-section-name="scroll-service">
+            <section className={`${busStyles.busIntService} scroll scroll-service`} data-section-name="scroll-service">
                 <Container>
-                    <Row className={styles.tabsRow}>
-                        <Col md={6}>
+                    <Row className={`${styles.manageItTabsRow} align-items-center`}>
+                        <Col xl={6}>
                             <MDBTabs className={styles.navTabs}>
                                 <MDBTabsItem>
                                     <MDBTabsLink onClick={() => handleBasicClick('tab1')} active={basicActive === 'tab1'}>
                                         <div className={styles.tabsPan}>
                                             <Image className='img-fluid'
                                                 src={icon1}
-                                                alt="Digital_Marketing"
+                                                alt="Healthcare"
                                             />
-                                            <h5>Search Engine Optimization</h5>
+                                            <h5>Healthcare</h5>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -46,9 +53,9 @@ const BusinessServics = () => {
                                         <div className={styles.tabsPan}>
                                             <Image className='img-fluid'
                                                 src={icon2}
-                                                alt="Telecommunication"
+                                                alt="Financial"
                                             />
-                                            <h5>Social Media Marketing</h5>
+                                            <h5>Financial Services</h5>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -57,52 +64,118 @@ const BusinessServics = () => {
                                         <div className={styles.tabsPan}>
                                             <Image className='img-fluid'
                                                 src={icon3}
-                                                alt="IT"
+                                                alt="Retail"
                                             />
-                                            <h5>Pay-Per Click Marketing</h5>
+                                            <h5>Retail</h5>
+                                        </div>
+                                    </MDBTabsLink>
+                                </MDBTabsItem>
+                                <MDBTabsItem>
+                                    <MDBTabsLink onClick={() => handleBasicClick('tab4')} active={basicActive === 'tab4'}>
+                                        <div className={styles.tabsPan}>
+                                            <Image className='img-fluid'
+                                                src={icon4}
+                                                alt="Manufacturing"
+                                            />
+                                            <h5>Manufacturing</h5>
+                                        </div>
+                                    </MDBTabsLink>
+                                </MDBTabsItem>
+                                <MDBTabsItem>
+                                    <MDBTabsLink onClick={() => handleBasicClick('tab5')} active={basicActive === 'tab5'}>
+                                        <div className={styles.tabsPan}>
+                                            <Image className='img-fluid'
+                                                src={icon5}
+                                                alt="Tech"
+                                            />
+                                            <h5>High Tech</h5>
+                                        </div>
+                                    </MDBTabsLink>
+                                </MDBTabsItem>
+                                <MDBTabsItem>
+                                    <MDBTabsLink onClick={() => handleBasicClick('tab6')} active={basicActive === 'tab6'}>
+                                        <div className={styles.tabsPan}>
+                                            <Image className='img-fluid'
+                                                src={icon6}
+                                                alt="Sector"
+                                            />
+                                            <h5>Public Sector</h5>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
                             </MDBTabs>
                         </Col>
-                        <Col md={6}>
+                        <Col xl={6}>
                             <MDBTabsContent>
                                 <MDBTabsPane show={basicActive === 'tab1'}>
                                     <div className={styles.tabPanContent}>
-                                        <Image className='img-fluid'
-                                            src={icon4}
-                                            alt="domian"
+                                        <Image className='img-fluid mb-3'
+                                            src={icon7}
+                                            alt="Healthcare"
                                         />
-                                        <h3>Search Engine <br />Optimization</h3>
+                                        <h3>Healthcare</h3>
                                         <p>
-                                            Want to rank on the first page of Google? Our team of SEO experts is
-                                            skilled to get the ball rolling on your ranking and get you to the top so you can reap the benefits of your investment. SEO has been the sole focus of many emerging brands, and this is what we’re here to do for you.
+                                            Connect with the endless possibilities that help you grow in the Healthcare industry as now you get to innovate with the help of Crystallite’s modern Healthcare Analytics. It empowers your establishment to quickly analyze available data and generate insights in real-time.
                                         </p>
                                     </div>
                                 </MDBTabsPane>
                                 <MDBTabsPane show={basicActive === 'tab2'}>
                                     <div className={styles.tabPanContent}>
-                                        <Image className='img-fluid'
-                                            src={icon5}
-                                            alt="domian"
+                                        <Image className='img-fluid mb-3'
+                                            src={icon8}
+                                            alt="Healthcare"
                                         />
-                                        <h3>Social Media <br />Marketing</h3>
+                                        <h3>Financial Services</h3>
                                         <p>
-                                            Want to rank on the first page of Google? Our team of SEO experts is
-                                            skilled to get the ball rolling on your ranking and get you to the top so you can reap the benefits of your investment. SEO has been the sole focus of many emerging brands, and this is what we’re here to do for you.
+                                            Combat inconsistencies in with Crystallite’s state-of-the-art Financial Analytics. Drive accurate break-downs with insights in real-time of any data leaks or financial dissipation. This enables you to make informed decisions when it comes to deriving profitable outcomes.
                                         </p>
                                     </div>
                                 </MDBTabsPane>
                                 <MDBTabsPane show={basicActive === 'tab3'}>
                                     <div className={styles.tabPanContent}>
-                                        <Image className='img-fluid'
-                                            src={icon6}
-                                            alt="domian"
+                                        <Image className='img-fluid mb-3'
+                                            src={icon9}
+                                            alt="Healthcare"
                                         />
-                                        <h3>Pay-Per Click <br />Marketing</h3>
+                                        <h3>Retail</h3>
                                         <p>
-                                            Want to rank on the first page of Google? Our team of SEO experts is
-                                            skilled to get the ball rolling on your ranking and get you to the top so you can reap the benefits of your investment. SEO has been the sole focus of many emerging brands, and this is what we’re here to do for you.
+                                            Transform the retail experience of your venture and your customers with Crystallite’s Retail Analytics. You retail operations are now faster, smarter, and more streamlined to yield customer-centric outcomes. This not only allows you to improve profitability but also maximize efficiency while empowering your customers.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={basicActive === 'tab4'}>
+                                    <div className={styles.tabPanContent}>
+                                        <Image className='img-fluid mb-3'
+                                            src={icon10}
+                                            alt="Healthcare"
+                                        />
+                                        <h3>Manufacturing</h3>
+                                        <p>
+                                            We at Crystallite recognize that every second in the manufacturing industry is crucial as any bottlenecks or latency issues can set you back for a massive financial hit. This is where Crystallite comes in to transform the way that your business performs to serve the modern customers’ needs of today.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={basicActive === 'tab5'}>
+                                    <div className={styles.tabPanContent}>
+                                        <Image className='img-fluid mb-3'
+                                            src={icon11}
+                                            alt="Healthcare"
+                                        />
+                                        <h3>High Tech</h3>
+                                        <p>
+                                            The world of tech has shifting dynamics that feature instant innovation and is fueled by the ability to respond quickly to changes. This is where Crystallite’s High-Tech Analytics come in to keep up with the modern trends of today and empower your business to harvest data from many sources and make lightning fast decision in no time.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={basicActive === 'tab6'}>
+                                    <div className={styles.tabPanContent}>
+                                        <Image className='img-fluid mb-3'
+                                            src={icon12}
+                                            alt="Healthcare"
+                                        />
+                                        <h3>Public Sector</h3>
+                                        <p>
+                                            Crystallite’s Public Sector analytics combine your data to explore the insights on your industry and the deliverables of public sector that need to be highlighted. Our goal is to help the public sector outshine the rest.
                                         </p>
                                     </div>
                                 </MDBTabsPane>

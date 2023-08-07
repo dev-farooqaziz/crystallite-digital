@@ -48,7 +48,9 @@ const HomeBanner = () => {
                                                         <p>Modern Life can be complicated. Simplify it with Crystallite's Services!</p>
                                                     </div>
                                                     <div className={styles.form}>
-                                                        <button className='banner-primary-btn'>Contact Us</button>
+                                                        <Link className='banner-primary-btn' href="/contact">
+                                                            Contact Us
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </Col>

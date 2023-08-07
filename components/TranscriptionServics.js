@@ -3,12 +3,12 @@ import { MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane } from '
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/TranscriptionServics.module.css';
-import icon1 from '../public/images/seo.png'
-import icon2 from '../public/images/smm.png'
-import icon3 from '../public/images/ppc.png'
-import icon4 from '../public/images/seo-1.png'
-import icon5 from '../public/images/smm-1.png'
-import icon6 from '../public/images/ppc-1.png'
+import icon1 from '../public/images/transcription.png'
+import icon2 from '../public/images/editing.png'
+import icon3 from '../public/images/proofreading.png'
+import icon4 from '../public/images/transcription-1.png'
+import icon5 from '../public/images/editing-1.png'
+import icon6 from '../public/images/proofreading-1.png'
 
 
 const TranscriptionServics = () => {
@@ -37,7 +37,7 @@ const TranscriptionServics = () => {
                                                 src={icon1}
                                                 alt="Digital_Marketing"
                                             />
-                                            <h5>Search Engine Optimization</h5>
+                                            <h5>TRANSCRIPTION</h5>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -48,7 +48,7 @@ const TranscriptionServics = () => {
                                                 src={icon2}
                                                 alt="Telecommunication"
                                             />
-                                            <h5>Social Media Marketing</h5>
+                                            <h5>EDITING</h5>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -59,7 +59,7 @@ const TranscriptionServics = () => {
                                                 src={icon3}
                                                 alt="IT"
                                             />
-                                            <h5>Pay-Per Click Marketing</h5>
+                                            <h5>PROOFREADING</h5>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -73,10 +73,9 @@ const TranscriptionServics = () => {
                                             src={icon4}
                                             alt="domian"
                                         />
-                                        <h3>Search Engine <br />Optimization</h3>
+                                        <h3>TRANSCRIPTION</h3>
                                         <p>
-                                            Want to rank on the first page of Google? Our team of SEO experts is
-                                            skilled to get the ball rolling on your ranking and get you to the top so you can reap the benefits of your investment. SEO has been the sole focus of many emerging brands, and this is what we’re here to do for you.
+                                            Transcriber Hub is home to  our skilled team of transcriptionists who are equipped with the analytical acumen to provide the highest quality in the lowest fraction of time. This not only ensures our timely delivery but has enabled us to develop a customer base of more than 10,000 satisfied customers and around 5 million mins of transcriptions processed.
                                         </p>
                                     </div>
                                 </MDBTabsPane>
@@ -86,10 +85,9 @@ const TranscriptionServics = () => {
                                             src={icon5}
                                             alt="domian"
                                         />
-                                        <h3>Social Media <br />Marketing</h3>
+                                        <h3>EDITING</h3>
                                         <p>
-                                            Want to rank on the first page of Google? Our team of SEO experts is
-                                            skilled to get the ball rolling on your ranking and get you to the top so you can reap the benefits of your investment. SEO has been the sole focus of many emerging brands, and this is what we’re here to do for you.
+                                            The tri-edit approach is where three of our editors audit the document that you have submitted with reference to the smallest of details whether it’s a grammatical issue in terms of spelling or any redundant words that could be removed to complement the clarity of speech. Whether its book drafts or you need baseline editing services, simply get in touch with our experts today!
                                         </p>
                                     </div>
                                 </MDBTabsPane>
@@ -99,10 +97,9 @@ const TranscriptionServics = () => {
                                             src={icon6}
                                             alt="domian"
                                         />
-                                        <h3>Pay-Per Click <br />Marketing</h3>
+                                        <h3>PROOFREADING</h3>
                                         <p>
-                                            Want to rank on the first page of Google? Our team of SEO experts is
-                                            skilled to get the ball rolling on your ranking and get you to the top so you can reap the benefits of your investment. SEO has been the sole focus of many emerging brands, and this is what we’re here to do for you.
+                                            The writer might overlook certain details while writing a manuscript, report, or even a book but this is where Transcriber Hub’s proofreading skills come into play. We not only proofread your piece but also provide a track report of the changes that have been made. This helps you identify the said changes and also enables you to revert those changes if you wish to head back to the content’s original state.
                                         </p>
                                     </div>
                                 </MDBTabsPane>

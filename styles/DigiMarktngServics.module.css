@@ -68,12 +68,24 @@
   line-height: 23px;
   color: #5f5f5f;
   font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.tabPanContent a {
+  font-size: 16px;
+  line-height: 23px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.tabPanContent a:hover{
+  color: #c35427;
 }
 
 /* ==========================Media-Queries========================== */
 
 @media screen and (max-width: 991px) {
-
   .digiService {
     height: auto;
     padding: 50px 0;

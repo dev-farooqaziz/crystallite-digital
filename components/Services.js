@@ -33,7 +33,7 @@ const Services = () => {
             <section className={`${styles.service} scroll scroll-service`} data-section-name="scroll-service">
                 <Container>
                     <Row>
-                        <Col xl={10} className='mx-auto mb-4'>
+                        <Col xl={10} className='mx-auto mb-4 pb-4'>
                             <div className={styles.serviceHeader}>
                                 <h2>Our <span>Services</span></h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip aliquip.</p>
@@ -51,7 +51,7 @@ const Services = () => {
                                                 alt="Digital_Marketing"
                                             />
                                             <h5>Digital Marketing</h5>
-                                            <p>Lorem Ipsum has been the industry's <br />standard dummy text ever since.</p>
+                                            <p>Digital Marketing is a blend of three ingredients, Passion, Creativity, and Consistency.</p>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -62,8 +62,8 @@ const Services = () => {
                                                 src={icon2}
                                                 alt="Telecommunication"
                                             />
-                                            <h5>Telecommunication</h5>
-                                            <p>Lorem Ipsum has been the industry's <br />standard dummy text ever since.</p>
+                                            <h5>Search Engine Optimizaion</h5>
+                                            <p>Spending a huge amount on marketing yet not getting Relevant Traffic? What could be the reason?</p>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -74,8 +74,8 @@ const Services = () => {
                                                 src={icon3}
                                                 alt="IT"
                                             />
-                                            <h5>IT Service</h5>
-                                            <p>Lorem Ipsum has been the industry's <br />standard dummy text ever since.</p>
+                                            <h5>Managed IT Services</h5>
+                                            <p>Globally, IT outsourcing is a well-proven and highly successful “managed services” business model.</p>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -87,7 +87,7 @@ const Services = () => {
                                                 alt="Hosting"
                                             />
                                             <h5>Dedicated Hosting</h5>
-                                            <p>Lorem Ipsum has been the industry's <br />standard dummy text ever since.</p>
+                                            <p>Dedicated server hosting covers complete infrastructure management.</p>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -99,7 +99,7 @@ const Services = () => {
                                                 alt="Transcription"
                                             />
                                             <h5>Transcription</h5>
-                                            <p>Lorem Ipsum has been the industry's <br />standard dummy text ever since.</p>
+                                            <p>At Transcriber Hub, our goal is to keep your satisfaction level to highest standards.</p>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -110,8 +110,8 @@ const Services = () => {
                                                 src={icon6}
                                                 alt="Intelligence"
                                             />
-                                            <h5>Intelligence</h5>
-                                            <p>Lorem Ipsum has been the industry's <br />standard dummy text ever since.</p>
+                                            <h5>Business Intelligence</h5>
+                                            <p>Bridging the gap between data and real-time business analytics for promising outcomes</p>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -122,7 +122,7 @@ const Services = () => {
                                 <MDBTabsPane show={basicActive === 'tab1'}>
                                     <div className={styles.tabPanContent}>
                                         <h3>Digital Marketing</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                                        <p>Crystallite’s expertise lies in building, publishing, and marketing engaging content that will grow your client base, increase customer retention and achieve your ultimate goal of sales. We formulate strategies in such a way that they make your social presence consistent and interesting.</p>
                                     </div>
                                     <Row className={styles.tabPanRow}>
                                         <Col md={4}>
@@ -164,8 +164,8 @@ const Services = () => {
                                 </MDBTabsPane>
                                 <MDBTabsPane show={basicActive === 'tab2'}>
                                     <div className={styles.tabPanContent}>
-                                        <h3>Telecommunication</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                                        <h3>Search Engine Optimizaion</h3>
+                                        <p>Crystallite’s expertise lies in building, publishing, and marketing engaging content that will grow your client base, increase customer retention and achieve your ultimate goal of sales. We formulate strategies in such a way that they make your social presence consistent and interesting.</p>
                                     </div>
                                     <Row className={styles.tabPanRow}>
                                         <Col md={4}>
@@ -207,8 +207,8 @@ const Services = () => {
                                 </MDBTabsPane>
                                 <MDBTabsPane show={basicActive === 'tab3'}>
                                     <div className={styles.tabPanContent}>
-                                        <h3>IT Service</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                                        <h3>Managed IT Services</h3>
+                                        <p>Globally, IT outsourcing is a well-proven and highly successful “managed services” business model. Crystallite can help you infuse efficiency in your IT operations by providing End-to-End managed services.</p>
                                     </div>
                                     <Row className={styles.tabPanRow}>
                                         <Col md={4}>
@@ -251,7 +251,7 @@ const Services = () => {
                                 <MDBTabsPane show={basicActive === 'tab4'}>
                                     <div className={styles.tabPanContent}>
                                         <h3>Dedicated Hosting</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                                        <p>Dedicated server hosting covers complete infrastructure management. Crystallite takes full responsibility for the monitoring, maintenance, security, and operation of your managed solution.</p>
                                     </div>
                                     <Row className={styles.tabPanRow}>
                                         <Col md={4}>
@@ -294,7 +294,7 @@ const Services = () => {
                                 <MDBTabsPane show={basicActive === 'tab5'}>
                                     <div className={styles.tabPanContent}>
                                         <h3>Transcription</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                                        <p>At Transcriber Hub, our goal is to keep your satisfaction level to highest standards through our revolutionary 3 – Tier process. Transcriber Hub takes pride of providing world-class services with surprising turnaround time in a highly affordable price.</p>
                                     </div>
                                     <Row className={styles.tabPanRow}>
                                         <Col md={4}>
@@ -337,7 +337,7 @@ const Services = () => {
                                 <MDBTabsPane show={basicActive === 'tab6'}>
                                     <div className={styles.tabPanContent}>
                                         <h3>Business Intelligence</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                                        <p>Crystallite will look out of your operations and documentation workloads, so you’ll focus a lot of on generating a lot of business and growth. We have a tendency to provide you with the liberty of macro managing your business. We’ve in-house time unit Specialists, Accountants and Document Coordinators.</p>
                                     </div>
                                     <Row className={styles.tabPanRow}>
                                         <Col md={4}>

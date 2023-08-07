@@ -15,7 +15,7 @@ const BusinessBanner = () => {
                                 <h1>Business <br />
                                     <span>Intelligence</span>
                                 </h1>
-                                <p>Innovation is just around the corner with us.</p>
+                                <p>Bridging the gap between data and real-time business analytics for promising outcomes</p>
                                 <div className={styles.form}>
                                     <button className='primary-btn'>Join Us</button>
                                 </div>

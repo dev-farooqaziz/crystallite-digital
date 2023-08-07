@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/Career.module.css';
 import careerbg from '../public/images/career_bg.png'
@@ -24,7 +25,9 @@ const Career = () => {
                                 <p>Join our team to create the best<br />
                                     digital solutions.</p>
                                 <div className={styles.form}>
-                                    <button className='primary-btn'>Apply Now</button>
+                                    <Link className='primary-btn' href="/career">
+                                        Apply Now
+                                    </Link>
                                 </div>
                             </div>
                         </Col>
