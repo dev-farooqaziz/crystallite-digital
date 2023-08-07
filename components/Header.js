@@ -56,7 +56,7 @@ const Header = () => {
                             </ul>
                         </Col>
                         <Col md={4}>
-                            <ul className={`${styles.menu} ps-0`}>
+                            <ul className={`${styles.menu} ${styles.secMenu}`}>
                                 <li>
                                     <Link href="/digital-marketing/" onClick={handleMenu}>
                                         Digital Marketing

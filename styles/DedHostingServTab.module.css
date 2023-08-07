@@ -85,6 +85,16 @@
   .navTabs li a {
     padding: 20px;
   }
+
+  .navTabs li a img {
+    display: none;
+  }
+
+  .tabsRow {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
