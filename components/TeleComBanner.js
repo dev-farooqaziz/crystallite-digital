@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/TeleComBanner.module.css';
 import teleBanner from '../public/images/telecommunication.png'
@@ -16,8 +17,10 @@ const TeleComBanner = () => {
                                     <span>Communication</span>
                                 </h1>
                                 <p>Connecting you to a new world of possibilities.</p>
-                                <div className={styles.form}>
-                                    <button className='primary-btn'>Join Us</button>
+                                <div className={`${styles.form} mt-4`}>
+                                    <Link className='primary-btn' href="/career">
+                                        Join Us
+                                    </Link>
                                 </div>
                             </div>
                         </Col>

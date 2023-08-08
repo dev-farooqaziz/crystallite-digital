@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/ContactPage.module.css';
 import cntctBanner from '../public/images/contact-banner.png'
 
-const ContactPage = () => {
+const ContactBanner = () => {
     return (
         <>
             <section className={`${styles.banner} scroll scroll-banner`} data-section-name="scroll-banner">
@@ -31,4 +31,4 @@ const ContactPage = () => {
     )
 }
 
-export default ContactPage
+export default ContactBanner

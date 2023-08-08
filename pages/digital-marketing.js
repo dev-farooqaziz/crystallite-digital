@@ -2,7 +2,7 @@ import Head from 'next/head';
 import FullPage from '../fullpagecomp/DigitalMarFullPage';
 
 
-export default function Home() {
+export default function DigitalMarketing() {
     return (
         <>
             <Head>

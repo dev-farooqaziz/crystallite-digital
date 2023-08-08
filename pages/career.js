@@ -2,7 +2,7 @@ import Head from 'next/head';
 import FullPage from '../fullpagecomp/CareerFullPage';
 
 
-export default function Home() {
+export default function Career() {
     return (
         <>
             <Head>

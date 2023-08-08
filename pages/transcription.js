@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import FullPage from '../fullpagecomp/TranscriptionFullPage';
 
-export default function Home() {
+export default function Transcription() {
     return (
         <>
             <Head>

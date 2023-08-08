@@ -2,7 +2,7 @@ import Head from 'next/head';
 import FullPage from '../fullpagecomp/TelecomFullPage';
 
 
-export default function Home() {
+export default function Telecommunication() {
     return (
         <>
             <Head>

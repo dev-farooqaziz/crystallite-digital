@@ -20,12 +20,12 @@ const Header = () => {
 
     return (
         <>
-            <Navbar.Brand href='/'>
+            <Link href='/' className='navbar-brand'>
                 <Image className={`${styles.logo} img-fluid`}
                     src={logo}
                     alt="logo"
                 />
-            </Navbar.Brand>
+            </Link>
             <FaBars className={styles.openMenu} onClick={handleMenu} />
             <Navbar className={isActive ? `${styles.navBar} ${styles.active}` : `${styles.navBar}`} expand="md">
                 <FaRegWindowClose className={styles.closeMenu} onClick={handleMenu} />

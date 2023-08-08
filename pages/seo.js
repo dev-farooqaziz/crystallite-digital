@@ -1,13 +1,13 @@
 import Head from 'next/head';
-import FullPage from '../fullpagecomp/AboutFullPage';
+import FullPage from '../fullpagecomp/SeoFullPage';
 
 
-export default function About() {
+export default function SearchEngineOptimization() {
     return (
         <>
             <Head>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-                <title>About - Crystallite Digital</title>
+                <title>Search Engine Optimization - Crystallite Digital</title>
                 <link rel="icon" href="/images/logo.svg" sizes="32x32" title="logo" alt="favicon" />
                 <meta name="author" content="Alvaro Trigo Lopez" />
                 <meta name="description" content="fullPage full-screen navigation and sections control menu." />

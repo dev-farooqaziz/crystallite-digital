@@ -2,7 +2,7 @@ import Head from 'next/head';
 import FullPage from '../fullpagecomp/BusinessFullPage';
 
 
-export default function Home() {
+export default function BusinessIntelligence() {
     return (
         <>
             <Head>

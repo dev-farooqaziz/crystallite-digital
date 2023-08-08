@@ -8,7 +8,7 @@ import icon2 from '../public/images/operating.png'
 import icon3 from '../public/images/guaranteed.png'
 import icon4 from '../public/images/competent.png'
 
-const DigtalMarktngServics = () => {
+const ManagedITServicsTab = () => {
 
     const [basicActive, setBasicActive] = useState('tab1');
 
@@ -117,4 +117,4 @@ const DigtalMarktngServics = () => {
     )
 }
 
-export default DigtalMarktngServics
+export default ManagedITServicsTab

@@ -2,7 +2,7 @@ import Head from 'next/head';
 import FullPage from '../fullpagecomp/DedHostingFullPage';
 
 
-export default function Home() {
+export default function DedicatedHosting() {
     return (
         <>
             <Head>

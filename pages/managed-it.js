@@ -2,7 +2,7 @@ import Head from 'next/head';
 import FullPage from '../fullpagecomp/ManagedItFullPage';
 
 
-export default function Home() {
+export default function ManagedIT() {
     return (
         <>
             <Head>
