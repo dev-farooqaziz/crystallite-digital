@@ -84,6 +84,9 @@
 @media screen and (max-width: 767px) {
   .careerCards {
     width: 100%;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-left: 35px;
   }
 
   .careerServ h2 {

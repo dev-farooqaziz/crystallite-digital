@@ -36,7 +36,7 @@ const Services = () => {
                         <Col xl={10} className='mx-auto mb-4 pb-4'>
                             <div className={styles.serviceHeader}>
                                 <h2>Our <span>Services</span></h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip aliquip.</p>
+                                <p>Our platform provides the best of all worlds – blending public cloud with private cloud and bare metal servers into a single, unified architecture. This flexible approach enables you to tailor your setup and achieve just the right levels of cost-efficiency, security, reliability, performance and control that you need.</p>
                             </div>
                         </Col>
                     </Row>
@@ -117,7 +117,7 @@ const Services = () => {
                                 </MDBTabsItem>
                             </MDBTabs>
                         </Col>
-                        <Col xl={6}>
+                        <Col xl={6} className='mbl-none'>
                             <MDBTabsContent>
                                 <MDBTabsPane show={basicActive === 'tab1'}>
                                     <div className={styles.tabPanContent}>

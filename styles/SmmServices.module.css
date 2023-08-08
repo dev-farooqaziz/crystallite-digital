@@ -117,6 +117,11 @@
     padding: 20px;
   }
 
+  .dedhostingBody h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
   .tabPanContent h3 {
     font-size: 30px;
   }
@@ -135,26 +140,19 @@
     display: none;
   }
 
+  .dedhostingBody h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .tabsPan h5 {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 0px;
   }
-
-  .tabPanContent img {
-    margin: 0 0 30px 0;
-    width: 50px;
-  }
-
-  .tabPanContent h3 {
-    font-size: 20px;
-  }
-
-  .tabPanContent p {
-    font-size: 13px;
-  }
-
+  
   .navTabs li {
     width: 100%;
+    height: 100%;
   }
 
   .navTabs li a {

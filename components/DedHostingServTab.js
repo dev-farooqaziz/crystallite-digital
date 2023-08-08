@@ -28,7 +28,7 @@ const DedHostingServTab = () => {
             <section className={`${styles.dedhostingService} scroll scroll-servTab`} data-section-name="scroll-servTab">
                 <Container>
                     <Row className={styles.tabsRow}>
-                        <Col lg={6}>
+                        <Col lg={6} className='mbl-none'>
                             <MDBTabsContent>
                                 <MDBTabsPane show={basicActive === 'tab1'}>
                                     <div className={styles.tabPanContent}>

@@ -74,7 +74,7 @@ const ManagedITServicsTab = () => {
                                 </MDBTabsItem>
                             </MDBTabs>
                         </Col>
-                        <Col xl={6}>
+                        <Col xl={6} className='mbl-none'>
                             <MDBTabsContent>
                                 <MDBTabsPane show={basicActive === 'tab1'}>
                                     <div className={styles.tabPanContent}>

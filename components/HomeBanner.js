@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import styles from '@/styles/HomeBanner.module.css';
 import search from '../public/images/search-icon.png'
 
@@ -22,9 +22,15 @@ const HomeBanner = () => {
                                     <div className={styles.social}>
                                         <div className={styles.socialIcon}>
                                             <span className={styles.borderLine}></span>
-                                            <Link href="#"><FaFacebookF /></Link>
-                                            <Link href="#"><FaTwitter /></Link>
-                                            <Link href="#"><FaLinkedinIn /></Link>
+                                            <Link href="https://www.facebook.com/CrystallitePakistan" target={'_blank'}>
+                                                <FaFacebookF />
+                                            </Link>
+                                            <Link href="https://www.instagram.com/crystallitepakistan/" target={'_blank'}>
+                                                <FaInstagram />
+                                            </Link>
+                                            <Link href="https://www.linkedin.com/company/crystallitepakistan/" target={'_blank'}>
+                                                <FaLinkedinIn />
+                                            </Link>
                                         </div>
                                         <div className={styles.search}>
                                             <div className={`${styles.searchIcon}  mx-auto`}>

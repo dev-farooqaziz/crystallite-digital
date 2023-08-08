@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
-import { FaPhoneAlt, FaEnvelope, FaBuilding, FaBars, FaRegWindowClose, FaFacebookSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaBuilding, FaBars, FaRegWindowClose, FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 import styles from '../styles/Header.module.css'
 import logo from '../public/images/logo.svg'
 
@@ -177,13 +177,13 @@ const Header = () => {
                                     </li>
                                     <li>
                                         <div className={styles.sociLinks}>
-                                            <Link href="#" target={'_blank'}>
+                                            <Link href="https://www.facebook.com/CrystallitePakistan" target={'_blank'}>
                                                 <FaFacebookSquare className={`${styles.icon}`} />
                                             </Link>
-                                            <Link href="#" target={'_blank'}>
-                                                <FaTwitterSquare className={`${styles.icon}`} />
+                                            <Link href="https://www.instagram.com/crystallitepakistan/" target={'_blank'}>
+                                                <FaInstagramSquare className={`${styles.icon}`} />
                                             </Link>
-                                            <Link href="#" target={'_blank'}>
+                                            <Link href="https://www.linkedin.com/company/crystallitepakistan/" target={'_blank'}>
                                                 <FaLinkedin className={`${styles.icon}`} />
                                             </Link>
                                         </div>

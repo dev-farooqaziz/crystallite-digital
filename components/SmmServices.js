@@ -90,7 +90,7 @@ const SmmServices = () => {
                                 </MDBTabsItem>
                             </MDBTabs>
                         </Col>
-                        <Col lg={6}>
+                        <Col lg={6} className='mbl-none'>
                             <MDBTabsContent>
                                 <MDBTabsPane show={basicActive === 'tab1'}>
                                     <div className={styles.tabPanContent}>
