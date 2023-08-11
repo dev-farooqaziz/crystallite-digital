@@ -20,11 +20,17 @@ const ManagedITServicsTab = () => {
         setBasicActive(value);
     };
 
+    const [selectedService, setSelectedService] = useState('tab1');
+
+    const handleSelectChange = (event) => {
+        setSelectedService(event.target.value);
+    };
+
     return (
         <>
             <section className={`${styles.manageItTabs} scroll scroll-servTab`} data-section-name="scroll-servTab">
                 <Container>
-                    <Row className={styles.manageItTabsRow}>
+                    <Row className={`${styles.manageItTabsRow} ${styles.deskTop}`}>
                         <Col xl={6}>
                             <MDBTabs className={styles.navTabs}>
                                 <MDBTabsItem>
@@ -74,7 +80,7 @@ const ManagedITServicsTab = () => {
                                 </MDBTabsItem>
                             </MDBTabs>
                         </Col>
-                        <Col xl={6} className='mbl-none'>
+                        <Col xl={6}>
                             <MDBTabsContent>
                                 <MDBTabsPane show={basicActive === 'tab1'}>
                                     <div className={styles.tabPanContent}>
@@ -101,6 +107,62 @@ const ManagedITServicsTab = () => {
                                     </div>
                                 </MDBTabsPane>
                                 <MDBTabsPane show={basicActive === 'tab4'}>
+                                    <div className={styles.tabPanContent}>
+                                        <h3>High Competent Staff</h3>
+                                        <p>
+                                            Crystallite has trained and exceedingly competent staff that can serve you with the best of their capacity. Our employees face and meet the challenge to resolve your problems in no time.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                            </MDBTabsContent>
+                        </Col>
+                    </Row>
+
+                    {/*========== For Mobile ==========*/}
+
+                    <Row className={`${styles.tabsRow} tabsRow`}>
+                        <Col xl={6}>
+                            <div className={styles.navTabs}>
+                                <select
+                                    id="serviceSelect"
+                                    className="form-select"
+                                    value={selectedService}
+                                    onChange={handleSelectChange}
+                                >
+                                    <option className='opt' value="tab1">Tailored to your<br /> Business needs</option>
+                                    <option className='opt' value="tab2">Operating System</option>
+                                    <option className='opt' value="tab3">Guaranteed SLA</option>
+                                    <option className='opt' value="tab4">High Competent Staff</option>
+                                </select>
+                            </div>
+                        </Col>
+                        <Col xl={6}>
+                            <MDBTabsContent>
+                                <MDBTabsPane show={selectedService === 'tab1'}>
+                                    <div className={styles.tabPanContent}>
+                                        <h3>Tailored to your <br />Business needs</h3>
+                                        <p>
+                                            Crystallite is ready to tailor your business needs by adding the value to the rapid change and advancement in your business. We support our clients in developing a new solution based on their unique business requirements.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab2'}>
+                                    <div className={styles.tabPanContent}>
+                                        <h3>Operating System</h3>
+                                        <p>
+                                            Both Linux and Windows operating systems are available with our dedicated hosting solutions. We also have optimized servers for e-commerce platforms such as Magneto.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab3'}>
+                                    <div className={styles.tabPanContent}>
+                                        <h3>Guaranteed SLA</h3>
+                                        <p>
+                                            Assuring our clients with 100% protected service with SLA providing you the highest level of security standard, customer support, and care.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab4'}>
                                     <div className={styles.tabPanContent}>
                                         <h3>High Competent Staff</h3>
                                         <p>

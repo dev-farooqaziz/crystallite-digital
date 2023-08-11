@@ -73,28 +73,26 @@
 /* ==========================Media-Queries========================== */
 
 @media screen and (max-width: 991px) {
-
-  .tabPanContent h3 {
-    font-size: 30px;
-  }
-
-  .tabPanContent p {
-    font-size: 13px;
-  }
-
-  .navTabs li a {
-    padding: 20px;
-  }
-
-  .navTabs li a img {
+  .deskTop {
     display: none;
   }
 
-  .tabsRow {
-    flex-direction: column-reverse;
-    align-items: center;
+  .tabPanContent img {
+    margin: 0 0 20px 0;
   }
 
+  .tabPanContent h3 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .tabPanContent p {
+    font-size: 16px;
+  }
+
+  .tabPanContent {
+    padding-left: 0px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -106,11 +104,6 @@
     display: none;
   }
 
-  .tabsPan h5 {
-    font-size: 15px;
-    margin-bottom: 0px;
-  }
-
   .tabPanContent img {
     margin: 0 0 10px 0;
     width: 50px;
@@ -118,18 +111,5 @@
 
   .tabPanContent h3 {
     font-size: 20px;
-  }
-
-  .tabPanContent p {
-    margin-bottom: 0px;
-    font-size: 13px;
-  }
-
-  .navTabs li {
-    width: 100%;
-  }
-
-  .navTabs li a {
-    padding: 20px 0;
   }
 }

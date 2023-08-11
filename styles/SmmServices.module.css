@@ -104,7 +104,6 @@
   height: 70px;
 }
 
-
 /* ==========================Media-Queries========================== */
 
 @media screen and (max-width: 991px) {
@@ -113,49 +112,40 @@
     padding: 50px 0;
   }
 
-  .navTabs li a {
-    padding: 20px;
+  .dedhostingBody h2 {
+    font-size: 25px;
+    line-height: 35px;
   }
 
-  .dedhostingBody h2 {
-    font-size: 30px;
-    line-height: 40px;
+  .deskTop {
+    display: none;
+  }
+
+  .tabPanContent img {
+    margin: 0 0 20px 0;
   }
 
   .tabPanContent h3 {
     font-size: 30px;
+    margin-top: 10px;
   }
 
   .tabPanContent p {
-    font-size: 13px;
+    font-size: 16px;
+  }
+
+  .tabPanContent {
+    margin-top: 0px;
+    padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .digiService {
-    padding: 50px 0;
-  }
-
   .tabsPan img {
     display: none;
   }
 
-  .dedhostingBody h2 {
+  .tabPanContent h3 {
     font-size: 20px;
-    line-height: 30px;
-  }
-
-  .tabsPan h5 {
-    font-size: 18px;
-    margin-bottom: 0px;
-  }
-  
-  .navTabs li {
-    width: 100%;
-    height: 100%;
-  }
-
-  .navTabs li a {
-    padding: 20px 0;
   }
 }

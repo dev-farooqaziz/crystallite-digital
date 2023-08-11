@@ -79,7 +79,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.tabPanContent a:hover{
+.tabPanContent a:hover {
   color: #c35427;
 }
 
@@ -91,8 +91,12 @@
     padding: 50px 0;
   }
 
-  .navTabs li a {
-    padding: 20px;
+  .deskTop {
+    display: none;
+  }
+
+  .tabPanContent img {
+    margin: 0 0 20px 0;
   }
 
   .tabPanContent h3 {
@@ -100,7 +104,7 @@
   }
 
   .tabPanContent p {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
@@ -113,29 +117,11 @@
     display: none;
   }
 
-  .tabsPan h5 {
-    font-size: 15px;
-    margin-bottom: 0px;
-  }
-
   .tabPanContent img {
-    margin: 0 0 30px 0;
     width: 50px;
   }
 
   .tabPanContent h3 {
     font-size: 20px;
-  }
-
-  .tabPanContent p {
-    font-size: 13px;
-  }
-
-  .navTabs li {
-    width: 100%;
-  }
-
-  .navTabs li a {
-    padding: 20px 0;
   }
 }

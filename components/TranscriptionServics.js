@@ -23,11 +23,18 @@ const TranscriptionServics = () => {
         setBasicActive(value);
     };
 
+    const [selectedService, setSelectedService] = useState('tab1');
+
+    const handleSelectChange = (event) => {
+        setSelectedService(event.target.value);
+    };
+
+
     return (
         <>
             <section className={`${styles.transService} scroll scroll-service`} data-section-name="scroll-service">
                 <Container>
-                    <Row className={styles.tabsRow}>
+                    <Row className={`${styles.tabsRow} ${styles.deskTop}`}>
                         <Col md={6}>
                             <MDBTabs className={styles.navTabs}>
                                 <MDBTabsItem>
@@ -65,7 +72,7 @@ const TranscriptionServics = () => {
                                 </MDBTabsItem>
                             </MDBTabs>
                         </Col>
-                        <Col md={6} className='mbl-none'>
+                        <Col md={6}>
                             <MDBTabsContent>
                                 <MDBTabsPane show={basicActive === 'tab1'}>
                                     <div className={styles.tabPanContent}>
@@ -92,6 +99,65 @@ const TranscriptionServics = () => {
                                     </div>
                                 </MDBTabsPane>
                                 <MDBTabsPane show={basicActive === 'tab3'}>
+                                    <div className={styles.tabPanContent}>
+                                        <Image className='img-fluid'
+                                            src={icon6}
+                                            alt="domian"
+                                        />
+                                        <h3>PROOFREADING</h3>
+                                        <p>
+                                            The writer might overlook certain details while writing a manuscript, report, or even a book but this is where Transcriber Hub’s proofreading skills come into play. We not only proofread your piece but also provide a track report of the changes that have been made. This helps you identify the said changes and also enables you to revert those changes if you wish to head back to the content’s original state.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                            </MDBTabsContent>
+                        </Col>
+                    </Row>
+
+                    {/*========== For Mobile ==========*/}
+
+                    <Row className={`${styles.tabsRow} tabsRow`}>
+                        <Col xl={6}>
+                            <div className={styles.navTabs}>
+                                <select
+                                    id="serviceSelect"
+                                    className="form-select"
+                                    value={selectedService}
+                                    onChange={handleSelectChange}
+                                >
+                                    <option className='opt' value="tab1">TRANSCRIPTION</option>
+                                    <option className='opt' value="tab2">EDITING</option>
+                                    <option className='opt' value="tab3">PROOFREADING</option>
+                                </select>
+                            </div>
+                        </Col>
+                        <Col xl={6}>
+                            <MDBTabsContent>
+                                <MDBTabsPane show={selectedService === 'tab1'}>
+                                    <div className={styles.tabPanContent}>
+                                        <Image className='img-fluid'
+                                            src={icon4}
+                                            alt="domian"
+                                        />
+                                        <h3>TRANSCRIPTION</h3>
+                                        <p>
+                                            Transcriber Hub is home to  our skilled team of transcriptionists who are equipped with the analytical acumen to provide the highest quality in the lowest fraction of time. This not only ensures our timely delivery but has enabled us to develop a customer base of more than 10,000 satisfied customers and around 5 million mins of transcriptions processed.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab2'}>
+                                    <div className={styles.tabPanContent}>
+                                        <Image className='img-fluid'
+                                            src={icon5}
+                                            alt="domian"
+                                        />
+                                        <h3>EDITING</h3>
+                                        <p>
+                                            The tri-edit approach is where three of our editors audit the document that you have submitted with reference to the smallest of details whether it’s a grammatical issue in terms of spelling or any redundant words that could be removed to complement the clarity of speech. Whether its book drafts or you need baseline editing services, simply get in touch with our experts today!
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab3'}>
                                     <div className={styles.tabPanContent}>
                                         <Image className='img-fluid'
                                             src={icon6}

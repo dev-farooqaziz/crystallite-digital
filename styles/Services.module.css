@@ -150,7 +150,7 @@
 
 @media screen and (max-width: 991px) {
   .service {
-    padding: 30px 0;
+    padding: 50px 0;
   }
 
   .servcTxt {
@@ -169,6 +169,43 @@
   .tabPanContent p {
     font-size: 13px;
   }
+
+  .tabsPan p {
+    display: none;
+  }
+
+  .deskTop {
+    display: none;
+  }
+
+  .tabSrvImg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 30px;
+    margin-top: 30px;
+  }
+
+  .tabSrvImg div {
+    width: 50%;
+    text-align: center;
+  }
+
+  .tabSrvImg img {
+    width: 25%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .tabSrvImg h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .tabsRow {
+    row-gap: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -180,28 +217,8 @@
   .serviceHeader p {
     font-size: 13px;
   }
-  
-  .tabsPan img{
-    display: none;
-  }
-
-  .tabsPan h5{
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-
-  .tabsPan p {
-    display: none;
-  }
 
   .tabsPan img {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .tabPanRow {
     display: none;
   }
 
@@ -217,17 +234,12 @@
     display: none;
   }
 
-  .servTxt{
+  .servTxt {
     display: none;
   }
 
-  .navTabs li {
-    height: 85px;
-  }
-
-  .navTabs li a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .tabSrvImg h4 {
+    font-size: 16px;
+    margin-bottom: 0;
   }
 }

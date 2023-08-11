@@ -16,7 +16,7 @@ import icon8 from '../public/images/sector-1.png'
 
 const SmmServices = () => {
 
-    
+
     const [basicActive, setBasicActive] = useState('tab1');
 
     const handleBasicClick = (value, string) => {
@@ -25,6 +25,12 @@ const SmmServices = () => {
         }
 
         setBasicActive(value);
+    };
+
+    const [selectedService, setSelectedService] = useState('tab1');
+
+    const handleSelectChange = (event) => {
+        setSelectedService(event.target.value);
     };
 
     return (
@@ -41,7 +47,7 @@ const SmmServices = () => {
                             </div>
                         </Col>
                     </Row>
-                    <Row className={styles.tabsRow}>
+                    <Row className={`${styles.tabsRow} ${styles.deskTop}`}>
                         <Col lg={6}>
                             <MDBTabs className={styles.navTabs}>
                                 <MDBTabsItem>
@@ -90,7 +96,7 @@ const SmmServices = () => {
                                 </MDBTabsItem>
                             </MDBTabs>
                         </Col>
-                        <Col lg={6} className='mbl-none'>
+                        <Col lg={6}>
                             <MDBTabsContent>
                                 <MDBTabsPane show={basicActive === 'tab1'}>
                                     <div className={styles.tabPanContent}>
@@ -135,6 +141,86 @@ const SmmServices = () => {
                                     </div>
                                 </MDBTabsPane>
                                 <MDBTabsPane show={basicActive === 'tab4'}>
+                                    <div className={styles.tabPanContent}>
+                                        <Image className='img-fluid mb-3'
+                                            src={icon8}
+                                            alt="domian"
+                                        />
+                                        <h3>Twitter Advertising <br /> Services</h3>
+                                        <p>
+                                            Our team of professional in-house Twitter marketing experts, media strategists, and
+                                            content creators drive attention by building brand awareness, influencer relations,
+                                            and follower engagement.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                            </MDBTabsContent>
+                        </Col>
+                    </Row>
+
+                    {/*========== For Mobile ==========*/}
+
+                    <Row className={`${styles.tabsRow} tabsRow`}>
+                        <Col xl={6}>
+                            <div className={styles.navTabs}>
+                                <select
+                                    id="serviceSelect"
+                                    className="form-select"
+                                    value={selectedService}
+                                    onChange={handleSelectChange}
+                                >
+                                    <option className='opt' value="tab1">Facebook Advertising <br /> Services</option>
+                                    <option className='opt' value="tab2">Youtube Advertising <br /> Services</option>
+                                    <option className='opt' value="tab3">Instagram Advertising <br /> Services</option>
+                                    <option className='opt' value="tab4">Twitter Advertising <br /> Services</option>
+                                </select>
+                            </div>
+                        </Col>
+                        <Col xl={6}>
+                            <MDBTabsContent>
+                                <MDBTabsPane show={selectedService === 'tab1'}>
+                                    <div className={styles.tabPanContent}>
+                                        <Image className='img-fluid mb-3'
+                                            src={icon4}
+                                            alt="domian"
+                                        />
+                                        <h3>Facebook Advertising <br /> Services</h3>
+                                        <p>
+                                            If you seek professional Facebook Advertising Services, you have come to the right
+                                            place.We will help you reach your targeted audience using the most sought-after
+                                            social media platform.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab2'}>
+                                    <div className={styles.tabPanContent}>
+                                        <Image className='img-fluid mb-3'
+                                            src={icon5}
+                                            alt="domian"
+                                        />
+                                        <h3>Youtube Advertising <br /> Services</h3>
+                                        <p>
+                                            If your target audience is present on YouTube, then our experts cash bring you
+                                            closer to your visual marketing goal. We bring you subscriptions, likes, and shares
+                                            on your videos or channels with carefully targeted captions and tags.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab3'}>
+                                    <div className={styles.tabPanContent}>
+                                        <Image className='img-fluid mb-3'
+                                            src={icon6}
+                                            alt="domian"
+                                        />
+                                        <h3>Instagram Advertising <br /> Services</h3>
+                                        <p>
+                                            Instagram is home to billions of active users scrolling through news feeds every
+                                            day. We bring your brand closer to your audience with Instagram availability with
+                                            thousands of daily views and interactions with potential customers.
+                                        </p>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab4'}>
                                     <div className={styles.tabPanContent}>
                                         <Image className='img-fluid mb-3'
                                             src={icon8}

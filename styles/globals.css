@@ -281,6 +281,10 @@ p {
   color: #fff;
 }
 
+.tabsRow{
+  display: none;
+}
+
 /* ==========================Media-Queries========================== */
 
 @media screen and (max-width: 1199px) {
@@ -295,7 +299,7 @@ p {
     font-size: 16px;
   }
 
-  .iconSlideNt{
+  .iconSlideNt {
     display: none;
   }
 
@@ -320,8 +324,28 @@ p {
     height: auto !important;
   }
 
-  .mbl-none{
+  .mbl-none {
     display: none;
+  }
+
+  .tabsRow{
+    display: flex;
+  }
+
+  .tabsRow .form-select {
+    border: 0;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: none;
+    padding: 10px 36px 10px 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 11px 0px rgb(0 0 0 / 24%);
+  }
+
+  .tabsRow .form-select .opt {
+    font-size: 14px;
+    border: 0;
   }
 }
 

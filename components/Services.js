@@ -28,6 +28,13 @@ const Services = () => {
         setBasicActive(value);
     };
 
+    const [selectedService, setSelectedService] = useState('tab1');
+
+    const handleSelectChange = (event) => {
+        setSelectedService(event.target.value);
+    };
+
+
     return (
         <>
             <section className={`${styles.service} scroll scroll-service`} data-section-name="scroll-service">
@@ -40,7 +47,7 @@ const Services = () => {
                             </div>
                         </Col>
                     </Row>
-                    <Row className={styles.tabsRow}>
+                    <Row className={`${styles.tabsRow} ${styles.deskTop}`}>
                         <Col xl={6}>
                             <MDBTabs className={styles.navTabs}>
                                 <MDBTabsItem>
@@ -117,7 +124,7 @@ const Services = () => {
                                 </MDBTabsItem>
                             </MDBTabs>
                         </Col>
-                        <Col xl={6} className='mbl-none'>
+                        <Col xl={6}>
                             <MDBTabsContent>
                                 <MDBTabsPane show={basicActive === 'tab1'}>
                                     <div className={styles.tabPanContent}>
@@ -384,6 +391,290 @@ const Services = () => {
                                 src={serviceTxt}
                                 alt="services"
                             />
+                        </Col>
+                    </Row>
+
+                    {/*========== For Mobile ==========*/}
+
+                    <Row className={`${styles.tabsRow} tabsRow`}>
+                        <Col xl={6}>
+                            <div className={styles.navTabs}>
+                                <select
+                                    id="serviceSelect"
+                                    className="form-select"
+                                    value={selectedService}
+                                    onChange={handleSelectChange}
+                                >
+                                    <option className='opt' value="tab1">Digital Marketing</option>
+                                    <option className='opt' value="tab2">Search Engine Optimization</option>
+                                    <option className='opt' value="tab3">Managed IT Services</option>
+                                    <option className='opt' value="tab4">Dedicated Hosting</option>
+                                    <option className='opt' value="tab5">Transcription</option>
+                                    <option className='opt' value="tab6">Business Intelligence</option>
+                                </select>
+                            </div>
+                        </Col>
+                        <Col xl={6}>
+                            <MDBTabsContent>
+                                <MDBTabsPane show={selectedService === 'tab1'}>
+                                    <div className={styles.tabPanContent}>
+                                        <h3>Digital Marketing</h3>
+                                        <p>Crystallite’s expertise lies in building, publishing, and marketing engaging content that will grow your client base, increase customer retention and achieve your ultimate goal of sales. We formulate strategies in such a way that they make your social presence consistent and interesting.</p>
+                                    </div>
+                                    <div className={styles.tabSrvImg}>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon7}
+                                                alt="domian"
+                                            />
+                                            <h4>Graphic Designing</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon8}
+                                                alt="domian"
+                                            />
+                                            <h4>Website Design <br />Development</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon9}
+                                                alt="domian"
+                                            />
+                                            <h4>Social Media <br />Marketing</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon10}
+                                                alt="domian"
+                                            />
+                                            <h4>Search Engine <br />Optimization</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon11}
+                                                alt="domian"
+                                            />
+                                            <h4>Animation & 3D <br />Videos</h4>
+                                        </div>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab2'}>
+                                    <div className={styles.tabPanContent}>
+                                        <h3>Search Engine Optimizaion</h3>
+                                        <p>Crystallite’s expertise lies in building, publishing, and marketing engaging content that will grow your client base, increase customer retention and achieve your ultimate goal of sales. We formulate strategies in such a way that they make your social presence consistent and interesting.</p>
+                                    </div>
+                                     <div className={styles.tabSrvImg}>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon7}
+                                                alt="domian"
+                                            />
+                                            <h4>Graphic Designing</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon8}
+                                                alt="domian"
+                                            />
+                                            <h4>Website Design <br />Development</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon9}
+                                                alt="domian"
+                                            />
+                                            <h4>Social Media <br />Marketing</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon10}
+                                                alt="domian"
+                                            />
+                                            <h4>Search Engine <br />Optimization</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon11}
+                                                alt="domian"
+                                            />
+                                            <h4>Animation & 3D <br />Videos</h4>
+                                        </div>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab3'}>
+                                    <div className={styles.tabPanContent}>
+                                        <h3>Managed IT Services</h3>
+                                        <p>Globally, IT outsourcing is a well-proven and highly successful “managed services” business model. Crystallite can help you infuse efficiency in your IT operations by providing End-to-End managed services.</p>
+                                    </div>
+                                     <div className={styles.tabSrvImg}>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon7}
+                                                alt="domian"
+                                            />
+                                            <h4>Graphic Designing</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon8}
+                                                alt="domian"
+                                            />
+                                            <h4>Website Design <br />Development</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon9}
+                                                alt="domian"
+                                            />
+                                            <h4>Social Media <br />Marketing</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon10}
+                                                alt="domian"
+                                            />
+                                            <h4>Search Engine <br />Optimization</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon11}
+                                                alt="domian"
+                                            />
+                                            <h4>Animation & 3D <br />Videos</h4>
+                                        </div>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab4'}>
+                                    <div className={styles.tabPanContent}>
+                                        <h3>Dedicated Hosting</h3>
+                                        <p>Dedicated server hosting covers complete infrastructure management. Crystallite takes full responsibility for the monitoring, maintenance, security, and operation of your managed solution.</p>
+                                    </div>
+                                     <div className={styles.tabSrvImg}>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon7}
+                                                alt="domian"
+                                            />
+                                            <h4>Graphic Designing</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon8}
+                                                alt="domian"
+                                            />
+                                            <h4>Website Design <br />Development</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon9}
+                                                alt="domian"
+                                            />
+                                            <h4>Social Media <br />Marketing</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon10}
+                                                alt="domian"
+                                            />
+                                            <h4>Search Engine <br />Optimization</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon11}
+                                                alt="domian"
+                                            />
+                                            <h4>Animation & 3D <br />Videos</h4>
+                                        </div>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab5'}>
+                                    <div className={styles.tabPanContent}>
+                                        <h3>Transcription</h3>
+                                        <p>At Transcriber Hub, our goal is to keep your satisfaction level to highest standards through our revolutionary 3 – Tier process. Transcriber Hub takes pride of providing world-class services with surprising turnaround time in a highly affordable price.</p>
+                                    </div>
+                                     <div className={styles.tabSrvImg}>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon7}
+                                                alt="domian"
+                                            />
+                                            <h4>Graphic Designing</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon8}
+                                                alt="domian"
+                                            />
+                                            <h4>Website Design <br />Development</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon9}
+                                                alt="domian"
+                                            />
+                                            <h4>Social Media <br />Marketing</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon10}
+                                                alt="domian"
+                                            />
+                                            <h4>Search Engine <br />Optimization</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon11}
+                                                alt="domian"
+                                            />
+                                            <h4>Animation & 3D <br />Videos</h4>
+                                        </div>
+                                    </div>
+                                </MDBTabsPane>
+                                <MDBTabsPane show={selectedService === 'tab6'}>
+                                    <div className={styles.tabPanContent}>
+                                        <h3>Business Intelligence</h3>
+                                        <p>Crystallite will look out of your operations and documentation workloads, so you’ll focus a lot of on generating a lot of business and growth. We have a tendency to provide you with the liberty of macro managing your business. We’ve in-house time unit Specialists, Accountants and Document Coordinators.</p>
+                                    </div>
+                                     <div className={styles.tabSrvImg}>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon7}
+                                                alt="domian"
+                                            />
+                                            <h4>Graphic Designing</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon8}
+                                                alt="domian"
+                                            />
+                                            <h4>Website Design <br />Development</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon9}
+                                                alt="domian"
+                                            />
+                                            <h4>Social Media <br />Marketing</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon10}
+                                                alt="domian"
+                                            />
+                                            <h4>Search Engine <br />Optimization</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon11}
+                                                alt="domian"
+                                            />
+                                            <h4>Animation & 3D <br />Videos</h4>
+                                        </div>
+                                    </div>
+                                </MDBTabsPane>
+                            </MDBTabsContent>
                         </Col>
                     </Row>
                 </Container>

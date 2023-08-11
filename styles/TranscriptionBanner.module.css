@@ -49,6 +49,7 @@
   .transBanner h1,
   .transBanner h1 span {
     font-size: 45px;
+    line-height: 55px;
   }
 
   .transBanner h1::before {
@@ -77,5 +78,6 @@
   .transBanner h1,
   .transBanner h1 span {
     font-size: 30px;
+    line-height: 40px;
   }
 }
