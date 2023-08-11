@@ -8,39 +8,19 @@ import { FaPhoneAlt, FaEnvelope, FaBuilding } from "react-icons/fa";
 
 const Contact = () => {
 
-    const router = useRouter(); // Initialize the router
-
     const [formvalue, setFormvalue] = useState({ name: '', email: '', phone: '', message: '' });
 
     const handleInput = (e) => {
         setFormvalue({ ...formvalue, [e.target.name]: e.target.value });
     }
 
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-
-    //     const formData = { name: formvalue.name, email: formvalue.email, phone: formvalue.phone, message: formvalue.message };
-
-    //     const res = await axios.post("http://localhost/reactcrudphp/api/user.php", formData);
-
-    // };
-
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         const formData = { name: formvalue.name, email: formvalue.email, phone: formvalue.phone, message: formvalue.message };
 
-        try {
-            const res = await axios.post("http://localhost/reactcrudphp/api/user.php", formData);
+        const res = await axios.post("http://localhost/reactcrudphp/api/user.php", formData);
 
-            // If the request is successful, redirect to the thank-you page
-            if (res.status === 200) {
-                router.push('/thank-you'); // Change '/thank-you' to your actual thank-you page URL
-            }
-        } catch (error) {
-            console.error("Error submitting form:", error);
-            // Handle any error that might occur during form submission
-        }
     };
 
     return (
