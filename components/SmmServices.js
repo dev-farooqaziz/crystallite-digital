@@ -169,10 +169,10 @@ const SmmServices = () => {
                                     value={selectedService}
                                     onChange={handleSelectChange}
                                 >
-                                    <option className='opt' value="tab1">Facebook Advertising <br /> Services</option>
-                                    <option className='opt' value="tab2">Youtube Advertising <br /> Services</option>
-                                    <option className='opt' value="tab3">Instagram Advertising <br /> Services</option>
-                                    <option className='opt' value="tab4">Twitter Advertising <br /> Services</option>
+                                    <option className='opt' value="tab1">Facebook Advertising Services</option>
+                                    <option className='opt' value="tab2">Youtube Advertising Services</option>
+                                    <option className='opt' value="tab3">Instagram Advertising Services</option>
+                                    <option className='opt' value="tab4">Twitter Advertising Services</option>
                                 </select>
                             </div>
                         </Col>
