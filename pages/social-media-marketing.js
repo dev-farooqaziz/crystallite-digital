@@ -6,7 +6,7 @@ export default function SocialMediaMarketing() {
     return (
         <>
             <Head>
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta charSet="UTF-8" />
                 <meta name="Resource-type" content="Document" />
                 {/* FavIcon */}
                 <link rel="icon" href="/images/logo.svg" sizes="32x32" title="logo" alt="favicon" />

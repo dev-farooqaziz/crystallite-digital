@@ -40,8 +40,7 @@ const ManagedITServicsTab = () => {
                                                 src={icon1}
                                                 alt="Tailored_Business"
                                             />
-                                            <h5>Tailored to your<br />
-                                                Business needs</h5>
+                                            <h5>Tailored to your Business needs</h5>
                                         </div>
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -84,7 +83,7 @@ const ManagedITServicsTab = () => {
                             <MDBTabsContent>
                                 <MDBTabsPane show={basicActive === 'tab1'}>
                                     <div className={styles.tabPanContent}>
-                                        <h3>Tailored to your <br />Business needs</h3>
+                                        <h3>Tailored to your Business needs</h3>
                                         <p>
                                             Crystallite is ready to tailor your business needs by adding the value to the rapid change and advancement in your business. We support our clients in developing a new solution based on their unique business requirements.
                                         </p>
@@ -129,7 +128,7 @@ const ManagedITServicsTab = () => {
                                     value={selectedService}
                                     onChange={handleSelectChange}
                                 >
-                                    <option className='opt' value="tab1">Tailored to your<br /> Business needs</option>
+                                    <option className='opt' value="tab1">Tailored to your Business needs</option>
                                     <option className='opt' value="tab2">Operating System</option>
                                     <option className='opt' value="tab3">Guaranteed SLA</option>
                                     <option className='opt' value="tab4">High Competent Staff</option>
@@ -140,7 +139,7 @@ const ManagedITServicsTab = () => {
                             <MDBTabsContent>
                                 <MDBTabsPane show={selectedService === 'tab1'}>
                                     <div className={styles.tabPanContent}>
-                                        <h3>Tailored to your <br />Business needs</h3>
+                                        <h3>Tailored to your Business needs</h3>
                                         <p>
                                             Crystallite is ready to tailor your business needs by adding the value to the rapid change and advancement in your business. We support our clients in developing a new solution based on their unique business requirements.
                                         </p>

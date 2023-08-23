@@ -4,17 +4,38 @@ import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/Services.module.css';
 import serviceTxt from '../public/images/service-text.png'
-import icon1 from '../public/images/icon-1.png'
-import icon2 from '../public/images/icon-2.png'
-import icon3 from '../public/images/icon-3.png'
-import icon4 from '../public/images/icon-4.png'
-import icon5 from '../public/images/icon-5.png'
-import icon6 from '../public/images/icon-6.png'
-import icon7 from '../public/images/icon-7.png'
-import icon8 from '../public/images/icon-8.png'
-import icon9 from '../public/images/icon-9.png'
-import icon10 from '../public/images/icon-10.png'
-import icon11 from '../public/images/icon-11.png'
+import icon01 from '../public/images/icon-1.png'
+import icon02 from '../public/images/icon-2.png'
+import icon03 from '../public/images/icon-3.png'
+import icon04 from '../public/images/icon-4.png'
+import icon05 from '../public/images/icon-5.png'
+import icon06 from '../public/images/icon-6.png'
+//
+import icon1 from '../public/images/seo.png'
+import icon2 from '../public/images/smm.png'
+import icon3 from '../public/images/proofreading.png'
+import icon4 from '../public/images/keyword.png'
+import icon5 from '../public/images/linkbuild.png'
+import icon6 from '../public/images/onpage.png'
+import icon7 from '../public/images/offpage.png'
+import icon8 from '../public/images/tailored-1.png'
+import icon9 from '../public/images/operating-1.png'
+import icon10 from '../public/images/guaranteed-1.png'
+import icon11 from '../public/images/competent-1.png'
+import icon12 from '../public/images/monitoring.png'
+import icon13 from '../public/images/operating-system.png'
+import icon14 from '../public/images/app-support.png'
+import icon15 from '../public/images/transcription.png'
+import icon16 from '../public/images/editing.png'
+import icon17 from '../public/images/proofreading.png'
+import icon18 from '../public/images/health.png'
+import icon19 from '../public/images/financial.png'
+import icon20 from '../public/images/retail.png'
+import icon21 from '../public/images/manufacturing.png'
+import icon22 from '../public/images/tech.png'
+import icon23 from '../public/images/sector.png'
+
+
 
 const Services = () => {
 
@@ -54,7 +75,7 @@ const Services = () => {
                                     <MDBTabsLink onClick={() => handleBasicClick('tab1')} active={basicActive === 'tab1'}>
                                         <div className={styles.tabsPan}>
                                             <Image className='img-fluid'
-                                                src={icon1}
+                                                src={icon01}
                                                 alt="Digital_Marketing"
                                             />
                                             <h5>Digital Marketing</h5>
@@ -66,7 +87,7 @@ const Services = () => {
                                     <MDBTabsLink onClick={() => handleBasicClick('tab2')} active={basicActive === 'tab2'}>
                                         <div className={styles.tabsPan}>
                                             <Image className='img-fluid'
-                                                src={icon2}
+                                                src={icon02}
                                                 alt="Telecommunication"
                                             />
                                             <h5>Search Engine Optimizaion</h5>
@@ -78,7 +99,7 @@ const Services = () => {
                                     <MDBTabsLink onClick={() => handleBasicClick('tab3')} active={basicActive === 'tab3'}>
                                         <div className={styles.tabsPan}>
                                             <Image className='img-fluid'
-                                                src={icon3}
+                                                src={icon03}
                                                 alt="IT"
                                             />
                                             <h5>Managed IT Services</h5>
@@ -90,7 +111,7 @@ const Services = () => {
                                     <MDBTabsLink onClick={() => handleBasicClick('tab4')} active={basicActive === 'tab4'}>
                                         <div className={styles.tabsPan}>
                                             <Image className='img-fluid'
-                                                src={icon4}
+                                                src={icon04}
                                                 alt="Hosting"
                                             />
                                             <h5>Dedicated Hosting</h5>
@@ -102,7 +123,7 @@ const Services = () => {
                                     <MDBTabsLink onClick={() => handleBasicClick('tab5')} active={basicActive === 'tab5'}>
                                         <div className={styles.tabsPan}>
                                             <Image className='img-fluid'
-                                                src={icon5}
+                                                src={icon05}
                                                 alt="Transcription"
                                             />
                                             <h5>Transcription</h5>
@@ -114,7 +135,7 @@ const Services = () => {
                                     <MDBTabsLink onClick={() => handleBasicClick('tab6')} active={basicActive === 'tab6'}>
                                         <div className={styles.tabsPan}>
                                             <Image className='img-fluid'
-                                                src={icon6}
+                                                src={icon06}
                                                 alt="Intelligence"
                                             />
                                             <h5>Business Intelligence</h5>
@@ -134,38 +155,24 @@ const Services = () => {
                                     <Row className={styles.tabPanRow}>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon7}
+                                                src={icon1}
                                                 alt="domian"
                                             />
-                                            <h4>Graphic Designing</h4>
+                                            <h4>Search Engine Optimization</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon8}
+                                                src={icon2}
                                                 alt="domian"
                                             />
-                                            <h4>Website Design <br />Development</h4>
+                                            <h4>Social Media Marketing</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon9}
+                                                src={icon3}
                                                 alt="domian"
                                             />
-                                            <h4>Social Media <br />Marketing</h4>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Image className='img-fluid'
-                                                src={icon10}
-                                                alt="domian"
-                                            />
-                                            <h4>Search Engine <br />Optimization</h4>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Image className='img-fluid'
-                                                src={icon11}
-                                                alt="domian"
-                                            />
-                                            <h4>Animation & 3D <br />Videos</h4>
+                                            <h4>Content Writing Services</h4>
                                         </Col>
                                     </Row>
                                 </MDBTabsPane>
@@ -177,38 +184,31 @@ const Services = () => {
                                     <Row className={styles.tabPanRow}>
                                         <Col md={4}>
                                             <Image className='img-fluid'
+                                                src={icon4}
+                                                alt="domian"
+                                            />
+                                            <h4>Facebook Advertising Services</h4>
+                                        </Col>
+                                        <Col md={4}>
+                                            <Image className='img-fluid'
+                                                src={icon5}
+                                                alt="domian"
+                                            />
+                                            <h4>Youtube Advertising Services</h4>
+                                        </Col>
+                                        <Col md={4}>
+                                            <Image className='img-fluid'
+                                                src={icon6}
+                                                alt="domian"
+                                            />
+                                            <h4>Instagram Advertising Services</h4>
+                                        </Col>
+                                        <Col md={4}>
+                                            <Image className='img-fluid'
                                                 src={icon7}
                                                 alt="domian"
                                             />
-                                            <h4>Graphic Designing</h4>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Image className='img-fluid'
-                                                src={icon8}
-                                                alt="domian"
-                                            />
-                                            <h4>Website Design <br />Development</h4>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Image className='img-fluid'
-                                                src={icon9}
-                                                alt="domian"
-                                            />
-                                            <h4>Social Media <br />Marketing</h4>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Image className='img-fluid'
-                                                src={icon10}
-                                                alt="domian"
-                                            />
-                                            <h4>Search Engine <br />Optimization</h4>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Image className='img-fluid'
-                                                src={icon11}
-                                                alt="domian"
-                                            />
-                                            <h4>Animation & 3D <br />Videos</h4>
+                                            <h4>Twitter Advertising Services</h4>
                                         </Col>
                                     </Row>
                                 </MDBTabsPane>
@@ -220,38 +220,31 @@ const Services = () => {
                                     <Row className={styles.tabPanRow}>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon7}
-                                                alt="domian"
-                                            />
-                                            <h4>Graphic Designing</h4>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Image className='img-fluid'
                                                 src={icon8}
                                                 alt="domian"
                                             />
-                                            <h4>Website Design <br />Development</h4>
+                                            <h4>Tailored to your Business needs</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
                                                 src={icon9}
                                                 alt="domian"
                                             />
-                                            <h4>Social Media <br />Marketing</h4>
+                                            <h4>Operating System</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
                                                 src={icon10}
                                                 alt="domian"
                                             />
-                                            <h4>Search Engine <br />Optimization</h4>
+                                            <h4>Guaranteed SLA</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
                                                 src={icon11}
                                                 alt="domian"
                                             />
-                                            <h4>Animation & 3D <br />Videos</h4>
+                                            <h4>High Competent Staff</h4>
                                         </Col>
                                     </Row>
                                 </MDBTabsPane>
@@ -263,38 +256,24 @@ const Services = () => {
                                     <Row className={styles.tabPanRow}>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon7}
+                                                src={icon12}
                                                 alt="domian"
                                             />
-                                            <h4>Graphic Designing</h4>
+                                            <h4>24/7 System Monitoring</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon8}
+                                                src={icon13}
                                                 alt="domian"
                                             />
-                                            <h4>Website Design <br />Development</h4>
+                                            <h4>Security And Performance</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon9}
+                                                src={icon14}
                                                 alt="domian"
                                             />
-                                            <h4>Social Media <br />Marketing</h4>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Image className='img-fluid'
-                                                src={icon10}
-                                                alt="domian"
-                                            />
-                                            <h4>Search Engine <br />Optimization</h4>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Image className='img-fluid'
-                                                src={icon11}
-                                                alt="domian"
-                                            />
-                                            <h4>Animation & 3D <br />Videos</h4>
+                                            <h4>Unlimited Onsite & Remote Support.</h4>
                                         </Col>
                                     </Row>
                                 </MDBTabsPane>
@@ -306,38 +285,24 @@ const Services = () => {
                                     <Row className={styles.tabPanRow}>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon7}
+                                                src={icon15}
                                                 alt="domian"
                                             />
-                                            <h4>Graphic Designing</h4>
+                                            <h4>TRANSCRIPTION</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon8}
+                                                src={icon16}
                                                 alt="domian"
                                             />
-                                            <h4>Website Design <br />Development</h4>
+                                            <h4>EDITING</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon9}
+                                                src={icon17}
                                                 alt="domian"
                                             />
-                                            <h4>Social Media <br />Marketing</h4>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Image className='img-fluid'
-                                                src={icon10}
-                                                alt="domian"
-                                            />
-                                            <h4>Search Engine <br />Optimization</h4>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Image className='img-fluid'
-                                                src={icon11}
-                                                alt="domian"
-                                            />
-                                            <h4>Animation & 3D <br />Videos</h4>
+                                            <h4>PROOFREADING</h4>
                                         </Col>
                                     </Row>
                                 </MDBTabsPane>
@@ -349,38 +314,45 @@ const Services = () => {
                                     <Row className={styles.tabPanRow}>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon7}
+                                                src={icon18}
                                                 alt="domian"
                                             />
-                                            <h4>Graphic Designing</h4>
+                                            <h4>Healthcare</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon8}
+                                                src={icon19}
                                                 alt="domian"
                                             />
-                                            <h4>Website Design <br />Development</h4>
+                                            <h4>Financial Services</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon9}
+                                                src={icon20}
                                                 alt="domian"
                                             />
-                                            <h4>Social Media <br />Marketing</h4>
+                                            <h4>Retail</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon10}
+                                                src={icon21}
                                                 alt="domian"
                                             />
-                                            <h4>Search Engine <br />Optimization</h4>
+                                            <h4>Manufacturing</h4>
                                         </Col>
                                         <Col md={4}>
                                             <Image className='img-fluid'
-                                                src={icon11}
+                                                src={icon22}
                                                 alt="domian"
                                             />
-                                            <h4>Animation & 3D <br />Videos</h4>
+                                            <h4>High Tech</h4>
+                                        </Col>
+                                        <Col md={4}>
+                                            <Image className='img-fluid'
+                                                src={icon23}
+                                                alt="domian"
+                                            />
+                                            <h4>Public Sector</h4>
                                         </Col>
                                     </Row>
                                 </MDBTabsPane>
@@ -424,38 +396,24 @@ const Services = () => {
                                     <div className={styles.tabSrvImg}>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon7}
+                                                src={icon1}
                                                 alt="domian"
                                             />
-                                            <h4>Graphic Designing</h4>
+                                            <h4>Search Engine Optimization</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon8}
+                                                src={icon2}
                                                 alt="domian"
                                             />
-                                            <h4>Website Design <br />Development</h4>
+                                            <h4>Social Media Marketing</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon9}
+                                                src={icon3}
                                                 alt="domian"
                                             />
-                                            <h4>Social Media <br />Marketing</h4>
-                                        </div>
-                                        <div>
-                                            <Image className='img-fluid'
-                                                src={icon10}
-                                                alt="domian"
-                                            />
-                                            <h4>Search Engine <br />Optimization</h4>
-                                        </div>
-                                        <div>
-                                            <Image className='img-fluid'
-                                                src={icon11}
-                                                alt="domian"
-                                            />
-                                            <h4>Animation & 3D <br />Videos</h4>
+                                            <h4>Content Writing Services</h4>
                                         </div>
                                     </div>
                                 </MDBTabsPane>
@@ -464,41 +422,34 @@ const Services = () => {
                                         <h3>Search Engine Optimizaion</h3>
                                         <p>Crystallite’s expertise lies in building, publishing, and marketing engaging content that will grow your client base, increase customer retention and achieve your ultimate goal of sales. We formulate strategies in such a way that they make your social presence consistent and interesting.</p>
                                     </div>
-                                     <div className={styles.tabSrvImg}>
+                                    <div className={styles.tabSrvImg}>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon4}
+                                                alt="domian"
+                                            />
+                                            <h4>Facebook Advertising Services</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon5}
+                                                alt="domian"
+                                            />
+                                            <h4>Youtube Advertising Services</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon6}
+                                                alt="domian"
+                                            />
+                                            <h4>Instagram Advertising Services</h4>
+                                        </div>
                                         <div>
                                             <Image className='img-fluid'
                                                 src={icon7}
                                                 alt="domian"
                                             />
-                                            <h4>Graphic Designing</h4>
-                                        </div>
-                                        <div>
-                                            <Image className='img-fluid'
-                                                src={icon8}
-                                                alt="domian"
-                                            />
-                                            <h4>Website Design <br />Development</h4>
-                                        </div>
-                                        <div>
-                                            <Image className='img-fluid'
-                                                src={icon9}
-                                                alt="domian"
-                                            />
-                                            <h4>Social Media <br />Marketing</h4>
-                                        </div>
-                                        <div>
-                                            <Image className='img-fluid'
-                                                src={icon10}
-                                                alt="domian"
-                                            />
-                                            <h4>Search Engine <br />Optimization</h4>
-                                        </div>
-                                        <div>
-                                            <Image className='img-fluid'
-                                                src={icon11}
-                                                alt="domian"
-                                            />
-                                            <h4>Animation & 3D <br />Videos</h4>
+                                            <h4>Twitter Advertising Services</h4>
                                         </div>
                                     </div>
                                 </MDBTabsPane>
@@ -507,41 +458,34 @@ const Services = () => {
                                         <h3>Managed IT Services</h3>
                                         <p>Globally, IT outsourcing is a well-proven and highly successful “managed services” business model. Crystallite can help you infuse efficiency in your IT operations by providing End-to-End managed services.</p>
                                     </div>
-                                     <div className={styles.tabSrvImg}>
-                                        <div>
-                                            <Image className='img-fluid'
-                                                src={icon7}
-                                                alt="domian"
-                                            />
-                                            <h4>Graphic Designing</h4>
-                                        </div>
+                                    <div className={styles.tabSrvImg}>
                                         <div>
                                             <Image className='img-fluid'
                                                 src={icon8}
                                                 alt="domian"
                                             />
-                                            <h4>Website Design <br />Development</h4>
+                                            <h4>Tailored to your Business needs</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
                                                 src={icon9}
                                                 alt="domian"
                                             />
-                                            <h4>Social Media <br />Marketing</h4>
+                                            <h4>Operating System</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
                                                 src={icon10}
                                                 alt="domian"
                                             />
-                                            <h4>Search Engine <br />Optimization</h4>
+                                            <h4>Guaranteed SLA</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
                                                 src={icon11}
                                                 alt="domian"
                                             />
-                                            <h4>Animation & 3D <br />Videos</h4>
+                                            <h4>High Competent Staff</h4>
                                         </div>
                                     </div>
                                 </MDBTabsPane>
@@ -550,41 +494,27 @@ const Services = () => {
                                         <h3>Dedicated Hosting</h3>
                                         <p>Dedicated server hosting covers complete infrastructure management. Crystallite takes full responsibility for the monitoring, maintenance, security, and operation of your managed solution.</p>
                                     </div>
-                                     <div className={styles.tabSrvImg}>
+                                    <div className={styles.tabSrvImg}>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon7}
+                                                src={icon12}
                                                 alt="domian"
                                             />
-                                            <h4>Graphic Designing</h4>
+                                            <h4>24/7 System Monitoring</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon8}
+                                                src={icon13}
                                                 alt="domian"
                                             />
-                                            <h4>Website Design <br />Development</h4>
+                                            <h4>Security And Performance</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon9}
+                                                src={icon14}
                                                 alt="domian"
                                             />
-                                            <h4>Social Media <br />Marketing</h4>
-                                        </div>
-                                        <div>
-                                            <Image className='img-fluid'
-                                                src={icon10}
-                                                alt="domian"
-                                            />
-                                            <h4>Search Engine <br />Optimization</h4>
-                                        </div>
-                                        <div>
-                                            <Image className='img-fluid'
-                                                src={icon11}
-                                                alt="domian"
-                                            />
-                                            <h4>Animation & 3D <br />Videos</h4>
+                                            <h4>Unlimited Onsite & Remote Support</h4>
                                         </div>
                                     </div>
                                 </MDBTabsPane>
@@ -593,41 +523,27 @@ const Services = () => {
                                         <h3>Transcription</h3>
                                         <p>At Transcriber Hub, our goal is to keep your satisfaction level to highest standards through our revolutionary 3 – Tier process. Transcriber Hub takes pride of providing world-class services with surprising turnaround time in a highly affordable price.</p>
                                     </div>
-                                     <div className={styles.tabSrvImg}>
+                                    <div className={styles.tabSrvImg}>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon7}
+                                                src={icon15}
                                                 alt="domian"
                                             />
-                                            <h4>Graphic Designing</h4>
+                                            <h4>TRANSCRIPTION</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon8}
+                                                src={icon16}
                                                 alt="domian"
                                             />
-                                            <h4>Website Design <br />Development</h4>
+                                            <h4>EDITING</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon9}
+                                                src={icon17}
                                                 alt="domian"
                                             />
-                                            <h4>Social Media <br />Marketing</h4>
-                                        </div>
-                                        <div>
-                                            <Image className='img-fluid'
-                                                src={icon10}
-                                                alt="domian"
-                                            />
-                                            <h4>Search Engine <br />Optimization</h4>
-                                        </div>
-                                        <div>
-                                            <Image className='img-fluid'
-                                                src={icon11}
-                                                alt="domian"
-                                            />
-                                            <h4>Animation & 3D <br />Videos</h4>
+                                            <h4>PROOFREADING</h4>
                                         </div>
                                     </div>
                                 </MDBTabsPane>
@@ -636,41 +552,48 @@ const Services = () => {
                                         <h3>Business Intelligence</h3>
                                         <p>Crystallite will look out of your operations and documentation workloads, so you’ll focus a lot of on generating a lot of business and growth. We have a tendency to provide you with the liberty of macro managing your business. We’ve in-house time unit Specialists, Accountants and Document Coordinators.</p>
                                     </div>
-                                     <div className={styles.tabSrvImg}>
+                                    <div className={styles.tabSrvImg}>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon7}
+                                                src={icon18}
                                                 alt="domian"
                                             />
-                                            <h4>Graphic Designing</h4>
+                                            <h4>Healthcare</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon8}
+                                                src={icon19}
                                                 alt="domian"
                                             />
-                                            <h4>Website Design <br />Development</h4>
+                                            <h4>Financial Services</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon9}
+                                                src={icon20}
                                                 alt="domian"
                                             />
-                                            <h4>Social Media <br />Marketing</h4>
+                                            <h4>Retail</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon10}
+                                                src={icon21}
                                                 alt="domian"
                                             />
-                                            <h4>Search Engine <br />Optimization</h4>
+                                            <h4>Manufacturing</h4>
                                         </div>
                                         <div>
                                             <Image className='img-fluid'
-                                                src={icon11}
+                                                src={icon22}
                                                 alt="domian"
                                             />
-                                            <h4>Animation & 3D <br />Videos</h4>
+                                            <h4>High Tech</h4>
+                                        </div>
+                                        <div>
+                                            <Image className='img-fluid'
+                                                src={icon23}
+                                                alt="domian"
+                                            />
+                                            <h4>Public Sector</h4>
                                         </div>
                                     </div>
                                 </MDBTabsPane>
