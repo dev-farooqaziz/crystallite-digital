@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import Link from 'next/link';
-import { Container, Row, Col, FormControl } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/Contact.module.css';
 import { FaPhoneAlt, FaEnvelope, FaBuilding } from "react-icons/fa";
+
 
 const Contact = () => {
 

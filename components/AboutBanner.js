@@ -2,7 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/AboutPage.module.css';
-import abtBanner from '../public/images/about-banner.png'
+//
+import abtBanner from '../public/images/banners/about-banner.png'
+
 
 const AboutBanner = () => {
     return (

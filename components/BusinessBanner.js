@@ -3,7 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/BusinessBanner.module.css';
-import busIntBanner from '../public/images/business-banner.png'
+//
+import busIntBanner from '../public/images/banners/business-banner.png'
+
 
 const BusinessBanner = () => {
     return (

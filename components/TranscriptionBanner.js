@@ -3,7 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/TranscriptionBanner.module.css';
-import transBanner from '../public/images/transcription-banner.png'
+//
+import transBanner from '../public/images/banners/transcription-banner.png'
+
 
 const TranscriptionBanner = () => {
     return (

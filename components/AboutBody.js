@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/AboutPage.module.css';
 
+
 const AboutBody = () => {
     return (
         <>

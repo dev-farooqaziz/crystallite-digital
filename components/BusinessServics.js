@@ -4,18 +4,19 @@ import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import busStyles from '@/styles/BusinessServics.module.css';
 import styles from '@/styles/MngdITServicsTab.module.css';
-import icon1 from '../public/images/health.png'
-import icon2 from '../public/images/financial.png'
-import icon3 from '../public/images/retail.png'
-import icon4 from '../public/images/manufacturing.png'
-import icon5 from '../public/images/tech.png'
-import icon6 from '../public/images/sector.png'
-import icon7 from '../public/images/health-1.png'
-import icon8 from '../public/images/financial-1.png'
-import icon9 from '../public/images/retail-1.png'
-import icon10 from '../public/images/manufacturing-1.png'
-import icon11 from '../public/images/tech-1.png'
-import icon12 from '../public/images/sector-1.png'
+//
+import icon1 from '../public/images/icons/health.png'
+import icon2 from '../public/images/icons/financial.png'
+import icon3 from '../public/images/icons/retail.png'
+import icon4 from '../public/images/icons/manufacturing.png'
+import icon5 from '../public/images/icons/tech.png'
+import icon6 from '../public/images/icons/sector.png'
+import icon7 from '../public/images/icons/health-1.png'
+import icon8 from '../public/images/icons/financial-1.png'
+import icon9 from '../public/images/icons/retail-1.png'
+import icon10 from '../public/images/icons/manufacturing-1.png'
+import icon11 from '../public/images/icons/tech-1.png'
+import icon12 from '../public/images/icons/sector-1.png'
 
 
 const BusinessServics = () => {

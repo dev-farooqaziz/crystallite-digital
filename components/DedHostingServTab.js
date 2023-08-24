@@ -3,12 +3,13 @@ import { MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane } from '
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/DedHostingServTab.module.css';
-import icon1 from '../public/images/monitoring.png'
-import icon2 from '../public/images/operating-system.png'
-import icon3 from '../public/images/app-support.png'
-import icon4 from '../public/images/monitoring-1.png'
-import icon5 from '../public/images/operating-system-1.png'
-import icon6 from '../public/images/app-suppot-1.png'
+//
+import icon1 from '../public/images/icons/monitoring.png'
+import icon2 from '../public/images/icons/operating-system.png'
+import icon3 from '../public/images/icons/app-support.png'
+import icon4 from '../public/images/icons/monitoring-1.png'
+import icon5 from '../public/images/icons/operating-system-1.png'
+import icon6 from '../public/images/icons/app-suppot-1.png'
 
 
 const DedHostingServTab = () => {

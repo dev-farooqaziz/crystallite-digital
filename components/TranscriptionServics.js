@@ -3,12 +3,13 @@ import { MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane } from '
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/TranscriptionServics.module.css';
-import icon1 from '../public/images/transcription.png'
-import icon2 from '../public/images/editing.png'
-import icon3 from '../public/images/proofreading.png'
-import icon4 from '../public/images/transcription-1.png'
-import icon5 from '../public/images/editing-1.png'
-import icon6 from '../public/images/proofreading-1.png'
+//
+import icon1 from '../public/images/icons/transcription.png'
+import icon2 from '../public/images/icons/editing.png'
+import icon3 from '../public/images/icons/proofreading.png'
+import icon4 from '../public/images/icons/transcription-1.png'
+import icon5 from '../public/images/icons/editing-1.png'
+import icon6 from '../public/images/icons/proofreading-1.png'
 
 
 const TranscriptionServics = () => {

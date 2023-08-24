@@ -2,9 +2,10 @@ import React from 'react';
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/TeleComServics.module.css';
-import icon1 from '../public/images/tele-fixed.png'
-import icon2 from '../public/images/tele-sms.png'
-import icon3 from '../public/images/tele-internet.png'
+//
+import icon1 from '../public/images/icons/tele-fixed.png'
+import icon2 from '../public/images/icons/tele-sms.png'
+import icon3 from '../public/images/icons/tele-internet.png'
 
 
 const TeleComServics = () => {

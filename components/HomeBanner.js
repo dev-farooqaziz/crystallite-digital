@@ -4,7 +4,9 @@ import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import styles from '@/styles/HomeBanner.module.css';
-import search from '../public/images/search-icon.png'
+//
+import search from '../public/images/icons/search-icon.png'
+
 
 const HomeBanner = () => {
     return (

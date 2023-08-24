@@ -3,7 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/MngdITBanner.module.css';
-import ITBanner from '../public/images/it-banner.png'
+//
+import ITBanner from '../public/images/banners/it-banner.png'
+
 
 const ManagedITBanner = () => {
     return (

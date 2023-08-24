@@ -4,14 +4,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane } from 'mdb-react-ui-kit';
 import styles from '@/styles/SmmServices.module.css';
 //
-import icon1 from '../public/images/proofreading.png'
-import icon2 from '../public/images/linkbuild.png'
-import icon3 from '../public/images/onpage.png'
-import icon4 from '../public/images/proofreading-1.png'
-import icon5 from '../public/images/linkbuild-1.png'
-import icon6 from '../public/images/onpage-1.png'
-import icon7 from '../public/images/offpage.png'
-import icon8 from '../public/images/offpage-1.png'
+import icon1 from '../public/images/icons/proofreading.png'
+import icon2 from '../public/images/icons/linkbuild.png'
+import icon3 from '../public/images/icons/onpage.png'
+import icon4 from '../public/images/icons/proofreading-1.png'
+import icon5 from '../public/images/icons/linkbuild-1.png'
+import icon6 from '../public/images/icons/onpage-1.png'
+import icon7 from '../public/images/icons/offpage.png'
+import icon8 from '../public/images/icons/offpage-1.png'
 
 
 const CwsServices = () => {

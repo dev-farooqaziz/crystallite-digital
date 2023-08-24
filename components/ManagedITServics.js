@@ -5,15 +5,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from '@/styles/MngdITServics.module.css';
-import icon1 from '../public/images/app-support.png'
-import icon2 from '../public/images/help-desk.png'
-import icon3 from '../public/images/software-plateform.png'
-import icon4 from '../public/images/backend-process.png'
-import icon5 from '../public/images/desktop-support.png'
-import icon6 from '../public/images/server-support.png'
-import icon7 from '../public/images/contact-center.png'
-import icon8 from '../public/images/data-center.png'
-import icon9 from '../public/images/network.png'
+//
+import icon1 from '../public/images/icons/app-support.png'
+import icon2 from '../public/images/icons/help-desk.png'
+import icon3 from '../public/images/icons/software-plateform.png'
+import icon4 from '../public/images/icons/backend-process.png'
+import icon5 from '../public/images/icons/desktop-support.png'
+import icon6 from '../public/images/icons/server-support.png'
+import icon7 from '../public/images/icons/contact-center.png'
+import icon8 from '../public/images/icons/data-center.png'
+import icon9 from '../public/images/icons/network.png'
 
 
 const ManagedITServics = () => {

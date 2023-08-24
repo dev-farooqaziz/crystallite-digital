@@ -53,3 +53,8 @@
   right: -25px;
   opacity: 1;
 }
+
+.searchIcon a img {
+  width: 20px;
+  height: 20px;
+}

@@ -6,7 +6,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import { FaPhoneAlt, FaEnvelope, FaBuilding, FaBars, FaRegWindowClose, FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 import styles from '../styles/Header.module.css'
+//
 import logo from '../public/images/logo.svg'
+
 
 const Header = () => {
 

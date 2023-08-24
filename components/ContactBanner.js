@@ -2,7 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/ContactPage.module.css';
-import cntctBanner from '../public/images/contact-banner.png'
+//
+import cntctBanner from '../public/images/banners/contact-banner.png'
+
 
 const ContactBanner = () => {
     return (

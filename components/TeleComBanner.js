@@ -3,7 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/TeleComBanner.module.css';
-import teleBanner from '../public/images/telecommunication.png'
+//
+import teleBanner from '../public/images/banners/telecommunication.png'
+
 
 const TeleComBanner = () => {
     return (

@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 import { Container, Row, Col, FormControl } from 'react-bootstrap';
-import style from '@/styles/Thank.module.css';
 import styles from '@/styles/HomeBanner.module.css';
+import style from '@/styles/Thank.module.css';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 //
-import search from '../public/images/search-icon.png'
+import search from '../public/images/icons/search-icon.png'
 
 
 const Thankyou = () => {
@@ -37,12 +37,12 @@ const Thankyou = () => {
                                         </div>
                                         <div className={styles.search}>
                                             <div className={`${styles.searchIcon}  mx-auto`}>
-                                                <span>
+                                                <Link href="/career">
                                                     <Image
                                                         src={search}
                                                         alt="search"
                                                     />
-                                                </span>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -51,7 +51,6 @@ const Thankyou = () => {
                                     <h4>Thank You</h4>
                                     <Link href="/" className={style.primaryBtn}>
                                         Back To Home
-
                                     </Link>
                                 </div>
                             </Col>

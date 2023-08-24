@@ -3,7 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/DigiMarktngBanner.module.css';
-import digiBanner from '../public/images/digital-marketing-banner.png'
+//
+import digiBanner from '../public/images/banners/digital-marketing-banner.png'
+
 
 const DigtalMarktngBanner = () => {
     return (

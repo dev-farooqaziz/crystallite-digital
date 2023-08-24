@@ -3,7 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/DedHostingBanner.module.css';
-import hostingBanner from '../public/images/hosting-banner.png'
+//
+import hostingBanner from '../public/images/banners/hosting-banner.png'
+
 
 const DedHostingBanner = () => {
     return (

@@ -3,10 +3,12 @@ import { MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane } from '
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '@/styles/MngdITServicsTab.module.css';
-import icon1 from '../public/images/tailored.png'
-import icon2 from '../public/images/operating.png'
-import icon3 from '../public/images/guaranteed.png'
-import icon4 from '../public/images/competent.png'
+//
+import icon1 from '../public/images/icons/tailored.png'
+import icon2 from '../public/images/icons/operating.png'
+import icon3 from '../public/images/icons/guaranteed.png'
+import icon4 from '../public/images/icons/competent.png'
+
 
 const ManagedITServicsTab = () => {
 
