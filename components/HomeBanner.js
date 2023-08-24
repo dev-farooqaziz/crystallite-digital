@@ -34,12 +34,12 @@ const HomeBanner = () => {
                                         </div>
                                         <div className={styles.search}>
                                             <div className={`${styles.searchIcon}  mx-auto`}>
-                                                <span>
+                                                <Link href="/career">
                                                     <Image
                                                         src={search}
                                                         alt="search"
                                                     />
-                                                </span>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
