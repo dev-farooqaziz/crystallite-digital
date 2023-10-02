@@ -28,7 +28,7 @@
     "react-bootstrap": "^2.7.2",
     "react-data-table-component": "^7.5.3",
     "react-dom": "18.2.0",
-    "react-fullpage": "^0.1.16",
+    "react-fullpage": "^0.1.1",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.9.0",
     "react-scroll": "^1.8.9",
