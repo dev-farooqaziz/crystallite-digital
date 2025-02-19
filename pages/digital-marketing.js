@@ -14,7 +14,7 @@ export default function DigitalMarketing() {
                 <title>Digital Marketing - Crystallite Pvt Ltd</title>
                 <meta name="description" content="How We Meet Enterprise Needs We'll take care of business." />
                 <meta name="keywords" content="Digital Marketing, Seo, Smm, IT Services, Dedicated Hosting" />
-                <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+                <meta name="robots" content="noindex, nofollow, noarchive, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
                 {/* Og Tags */}
                 <meta property="og:locale" content="en_US" />
                 <meta property="og:type" content="website" />
